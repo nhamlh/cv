@@ -1,0 +1,169 @@
+{
+  "basics": {
+    "name": "Le Hoai Nham",
+    "label": "Devops Engineer",
+    "picture": "./nhamlh_2017.jpg",
+    "email": "lehoainham@gmail.com",
+    "phone": "+84 909404290",
+    "website": "http://nhamlh.github.io",
+    "summary": "I am a DevOps Engineer. I have passions in Linux and opensource community. I love helping organizations to build great products. I am passionate about learning new things in technology fields. I spend most of my time working with Linux, DevOps tools, and Python language.",
+    "location": {
+      "address": "311/1 Huynh Tan Phat",
+      "city": "Ho Chi Minh",
+      "countryCode": "VN"
+    },
+    "profiles": [
+      {
+        "network": "Github",
+        "username": "nhamlh",
+        "url": "https://github.com/nhamlh"
+      },
+      {
+        "network": "Twitter",
+        "username": "nhamlh",
+        "url": "https://twitter.com/nhamlh"
+      },
+      {
+        "network": "Linkedin",
+        "username": "nhamlh",
+        "url": "https://linkedin.com/nhamlh"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Misfit",
+      "position": "Cloud Operation Engineer",
+      "website": "https://misfit.com/",
+      "startDate": "2016-08-08",
+      "summary": "Misfit is an American consumer electronics company specializing in wearable technology that utilizes sensors and home automation products.",
+      "highlights": [
+        "Manage AWS resoures like EC2, ECS, S3, Route 53, Cloudfront, Kinesis, SQS, etc",
+        "Deploy and manage kubernetes on AWS using kops",
+        "Migrate API services from ECS to Kubernetes",
+        "Manage elasticsearch-logstash-kibana stack",
+        "Deploy and manage many services on kubernetes like graylog2, elasticsearch, kafka, prometheus, sentry",
+        "Monitor kubernetes and services using prometheus, get notified via telegram or slack",
+        "Help building in-house DevOps tools using shell script, python and golang",
+        "Help developers to roll out projects using DevOps tools: jenkins, bitbucket pipelines, helm"
+      ]
+    },
+    {
+      "company": "Posiba",
+      "position": "Cloud Operation Engineer",
+      "website": "https://posiba.com/",
+      "startDate": "2016-01-21",
+      "endDate": "2016-07-30",
+      "summary": "Posiba is an information service for the social sector dedicated to helping those working for public good make greater positive impact.",
+      "highlights": [
+        "Manage over one hundred linux instances on AWS using puppet.",
+        "Help developers to roll out projects using devops tools: puppet, jenkins, docker.",
+        "Monitor all infrastructure components using zabbix, get notified via telegram.",
+        "Collect all system and application logs using fluentd, elasticsearch and kibana.",
+        "Help building in-house devops tools using shell script and python."
+      ]
+    },
+    {
+      "company": "FPT Telecom",
+      "position": "Linux system administrator",
+      "website": "https://fpt.vn",
+      "startDate": "2014-07-16",
+      "endDate": "2016-01-15",
+      "summary": "FPT Telecom is one of biggest ISPs in Vietnam.",
+      "highlights": [
+        "Build an monitor system devices using icinga2 and cacti.",
+        "Manage linux servers with many roles: DNS cluster, mail gateway, monitoring servers.",
+        "Use ansible to manage multiple linux servers.",
+        "Build squid proxy for local users.",
+        "Build, manage and backup VMware ESXi."
+      ]
+    },
+    {
+      "company": "vHost.vn",
+      "position": "Technical support (part-time)",
+      "website": "https://vhost.vn",
+      "startDate": "2013-10-01",
+      "endDate": "2014-07-01",
+      "summary": "vHost.vn is one of the fastest growing hosting providers in Vietnam.",
+      "highlights": [
+        "Support customers to install web server, mail server, and troubleshoot hosting problems.",
+        "Monitor system status using zabbix.",
+        "Collect and analyze system logs using graylog2."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Ho Chi Minh University of Sciences",
+      "area": "Information Technology",
+      "studyType": "Bachelor",
+      "startDate": "2010-09-01",
+      "endDate": "2014-07-15",
+      "gpa": "7.75"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming",
+      "keywords": [
+        "Python",
+        "Golang",
+        "Shell script"
+      ]
+    },
+    {
+      "name": "Linux system",
+      "level": "Good",
+      "keywords": [
+        "Troubleshooting",
+        "Bash shell",
+        "Iptables",
+        "Openvpn",
+        "Nginx",
+        "Postgresql"
+      ]
+    },
+    {
+      "name": "Devops",
+      "level": "Intermediate",
+      "keywords": [
+        "Amazon web service (AWS)",
+        "Kubernetes",
+        "Docker",
+        "Puppet",
+        "Ansible",
+        "Jenkins",
+        "Git",
+        "Gitlab",
+        "ELK",
+        "Kafka",
+        "Graylog2"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Vietnamese",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Intermediate"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Reading",
+      "keywords": [
+        "Literature",
+        "Philosophy",
+        "Economy"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Ky-Anh Huynh <xkyanh@gmail.com>"
+    }
+  ]
+}
