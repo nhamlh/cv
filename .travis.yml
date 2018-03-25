@@ -10,7 +10,7 @@ install:
 
 script:
   - mkdir public
-  - resume export -r resume.json --format html --theme kwan ./public/index
+  - resume export -r resume.json --format html --theme kwan public/index
 
 # Deploy to GitHub pages
 deploy:
