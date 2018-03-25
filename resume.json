@@ -2,7 +2,7 @@
   "basics": {
     "name": "Le Hoai Nham",
     "label": "Devops Engineer",
-    "picture": "./nhamlh_2017.jpg",
+    "picture": "https://nhamlh.space/cv/nhamlh_2017.jpg",
     "email": "lehoainham@gmail.com",
     "phone": "+84 909404290",
     "website": "http://nhamlh.github.io",
@@ -33,7 +33,7 @@
   "work": [
     {
       "company": "Misfit",
-      "position": "Cloud Operation Engineer",
+      "position": "DevOps Engineer",
       "website": "https://misfit.com/",
       "startDate": "2016-08-08",
       "summary": "Misfit is an American consumer electronics company specializing in wearable technology that utilizes sensors and home automation products.",
@@ -43,8 +43,8 @@
         "Migrate API services from ECS to Kubernetes",
         "Manage elasticsearch-logstash-kibana stack",
         "Deploy and manage many services on kubernetes like graylog2, elasticsearch, kafka, prometheus, sentry",
-        "Monitor kubernetes and services using prometheus, get notified via telegram or slack",
-        "Help building in-house DevOps tools using shell script, python and golang",
+        "Monitor kubernetes and services using prometheus and grafana, get notified via telegram or slack",
+        "Build in-house tools to manage, automate and optimize infrastructure using shell script, python and golang",
         "Help developers to roll out projects using DevOps tools: jenkins, bitbucket pipelines, helm"
       ]
     },
@@ -56,11 +56,11 @@
       "endDate": "2016-07-30",
       "summary": "Posiba is an information service for the social sector dedicated to helping those working for public good make greater positive impact.",
       "highlights": [
-        "Manage over one hundred linux instances on AWS using puppet.",
+        "Manage linux instances on AWS using puppet.",
         "Help developers to roll out projects using devops tools: puppet, jenkins, docker.",
         "Monitor all infrastructure components using zabbix, get notified via telegram.",
         "Collect all system and application logs using fluentd, elasticsearch and kibana.",
-        "Help building in-house devops tools using shell script and python."
+        "Build in-house devops tools using shell script and python."
       ]
     },
     {
