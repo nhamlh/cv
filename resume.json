@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Le Hoai Nham",
-    "label": "Devops Engineer",
-    "picture": "https://nhamlh.space/cv/nhamlh_2017.jpg",
+    "label": "Software Engineer, Development Operations",
+    "picture": "nhamlh_2017.png",
     "email": "lehoainham@gmail.com",
     "phone": "+84 909404290",
     "website": "http://nhamlh.github.io",
-    "summary": "I am a DevOps Engineer. I have passions in Linux and opensource community. I love helping organizations to build great products. I am passionate about learning new things in technology fields. I spend most of my time working with Linux, DevOps tools, and Python language.",
+    "summary": "I'm a Software Engineer, specialized in Development Operations. I've been helping organizations build great products since 2013. Most of my free time is spent learning new technologies. I have a huge passion for Linux and the open source community. Things that I'm currently focus on right now are Linux, DevOps tools, and the Python language.",
     "location": {
       "address": "311/1 Huynh Tan Phat",
       "city": "Ho Chi Minh",
@@ -99,7 +99,7 @@
       "studyType": "Bachelor",
       "startDate": "2010-09-01",
       "endDate": "2014-07-15",
-      "gpa": "7.75"
+      "gpa": "7.75/10"
     }
   ],
   "skills": [
@@ -124,7 +124,7 @@
       ]
     },
     {
-      "name": "Devops",
+      "name": "DevOps",
       "level": "Intermediate",
       "keywords": [
         "Amazon web service (AWS)",
@@ -143,12 +143,12 @@
   ],
   "languages": [
     {
-      "language": "Vietnamese",
-      "fluency": "Native speaker"
+      "name": "Vietnamese",
+      "level": "Native speaker"
     },
     {
-      "language": "English",
-      "fluency": "Intermediate"
+      "name": "English",
+      "level": "Intermediate"
     }
   ],
   "interests": [
