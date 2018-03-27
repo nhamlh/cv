@@ -5,8 +5,8 @@
     "picture": "nhamlh_2017.png",
     "email": "lehoainham@gmail.com",
     "phone": "+84 909404290",
-    "website": "http://nhamlh.github.io",
-    "summary": "I'm a Software Engineer, specialized in Development Operations. I've been helping organizations build great products since 2013. Most of my free time is spent learning new technologies. I have a huge passion for Linux and the open source community. Things that I'm currently focus on right now are Linux, DevOps tools, and the Python language.",
+    "website": "https://nhamlh.space",
+    "summary": "I'm a Software Engineer, specialized in Development Operations. I've been helping organizations build great products since 2014. Most of my free time is spent learning new technologies. I have a huge passion for Linux and the open source community. Things that I'm currently focus on right now are Linux, DevOps tools, and the Python language.",
     "location": {
       "address": "311/1 Huynh Tan Phat",
       "city": "Ho Chi Minh",
@@ -32,20 +32,19 @@
   },
   "work": [
     {
-      "company": "Misfit",
+      "company": "Fossil VN - Misfit",
       "position": "DevOps Engineer",
       "website": "https://misfit.com/",
       "startDate": "2016-08-08",
-      "summary": "Misfit is an American consumer electronics company specializing in wearable technology that utilizes sensors and home automation products.",
+      "summary": "Misfit is an American consumer electronics company specializing in wearable technology that utilizes sensors and home automation products. Misfit then was acquired by Fossil Group in late 2015.",
       "highlights": [
-        "Manage AWS resoures like EC2, ECS, S3, Route 53, Cloudfront, Kinesis, SQS, etc",
-        "Deploy and manage kubernetes on AWS using kops",
-        "Migrate API services from ECS to Kubernetes",
-        "Manage elasticsearch-logstash-kibana stack",
-        "Deploy and manage many services on kubernetes like graylog2, elasticsearch, kafka, prometheus, sentry",
+        "Planning and build AWS based infrastructure for backend team",
+        "Kubernetes the hard way on AWS using kops, planning and migrate system running on AWS ECS to K8S without downtime",
+        "Deploy, manage and stablize many services on kubernetes like graylog2, elasticsearch, kafka, prometheus, sentry",
         "Monitor kubernetes and services using prometheus and grafana, get notified via telegram or slack",
+        "Manage centralized logging system built upon ELK, using filebeat agents to collect logs from multiple sources",
         "Build in-house tools to manage, automate and optimize infrastructure using shell script, python and golang",
-        "Help developers to roll out projects using DevOps tools: jenkins, bitbucket pipelines, helm"
+        "Planning, design and create CI/CD process for development team using Jenkins, Bitbucket pipelines and Kubernetes"
       ]
     },
     {
@@ -57,10 +56,10 @@
       "summary": "Posiba is an information service for the social sector dedicated to helping those working for public good make greater positive impact.",
       "highlights": [
         "Manage linux instances on AWS using puppet.",
-        "Help developers to roll out projects using devops tools: puppet, jenkins, docker.",
-        "Monitor all infrastructure components using zabbix, get notified via telegram.",
-        "Collect all system and application logs using fluentd, elasticsearch and kibana.",
-        "Build in-house devops tools using shell script and python."
+        "Monitor infrastructure components using zabbix, get notified via telegram.",
+        "Collect system and application logs using fluentd, elasticsearch and kibana.",
+        "Build in-house devops tools using shell script and python.",
+        "Help developers to roll out projects using devops tools: puppet, jenkins, docker."
       ]
     },
     {
@@ -71,10 +70,10 @@
       "endDate": "2016-01-15",
       "summary": "FPT Telecom is one of biggest ISPs in Vietnam.",
       "highlights": [
-        "Build an monitor system devices using icinga2 and cacti.",
-        "Manage linux servers with many roles: DNS cluster, mail gateway, monitoring servers.",
-        "Use ansible to manage multiple linux servers.",
-        "Build squid proxy for local users.",
+        "Build and monitor linux systems and network devices using icinga2 and cacti.",
+        "Manage linux servers with many roles: DNS clusters, email gateway, monitoring servers, etc. ",
+        "Develop ansible playbooks to manage multiple linux servers.",
+        "Guard against local users via squid proxy, analyze http traffic through ELK spot suspicious behavior",
         "Build, manage and backup VMware ESXi."
       ]
     },
