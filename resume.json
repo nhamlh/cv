@@ -37,13 +37,13 @@
       "startDate": "2016-08-08",
       "summary": "Misfit is an American consumer electronics company specializing in wearable technology that utilizes sensors and home automation products. Misfit then was acquired by Fossil Group in late 2015.",
       "highlights": [
-        "Planning and build AWS based infrastructure for backend team",
-        "Kubernetes the hard way on AWS using kops, planning and migrate system running on AWS ECS to K8S without downtime",
+        "Plan and build AWS based infrastructure for backend team",
+        "Kubernetes the hard way on AWS using kops, plan and migrate system running on AWS ECS to K8S without downtime",
         "Deploy, manage and stablize many services on kubernetes like graylog2, elasticsearch, kafka, prometheus, sentry",
         "Monitor kubernetes and services using prometheus and grafana, get notified via telegram or slack",
         "Manage centralized logging system built upon ELK, using filebeat agents to collect logs from multiple sources",
         "Build in-house tools to manage, automate and optimize infrastructure using shell script, python and golang",
-        "Planning, design and create CI/CD process for development team using Jenkins, Bitbucket pipelines and Kubernetes"
+        "Plan, design and create CI/CD process for development team using Jenkins, Bitbucket pipelines and Kubernetes"
       ]
     },
     {
@@ -72,7 +72,7 @@
         "Build and monitor linux systems and network devices using icinga2 and cacti.",
         "Manage linux servers with many roles: DNS clusters, email gateway, monitoring servers, etc. ",
         "Develop ansible playbooks to manage multiple linux servers.",
-        "Guard against local users via squid proxy, analyze http traffic through ELK spot suspicious behavior",
+        "Guard against local users via squid proxy, analyze http traffic through ELK to spot suspicious behaviors",
         "Build, manage and backup VMware ESXi."
       ]
     },
