@@ -1,0 +1,21 @@
+{
+  "name": "jsonresume-theme-nhamlh",
+  "version": "0.0.1",
+  "description": "Compact, printable theme for JSON Resume",
+  "author": "Hoai-Nham Le",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nhamlh/jsonresume-theme-nhamlh.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "handlebars": "^4.7.7",
+    "css": "2.2.x"
+  },
+  "bugs": {
+    "url": "https://github.com/nhamlh/jsonresume-theme-nhamlh/issues"
+  },
+  "homepage": "https://github.com/nhamlh/jsonresume-theme-nhamlh",
+  "main": "index.js",
+  "devDependencies": {}
+}
