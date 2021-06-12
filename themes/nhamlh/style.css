@@ -113,11 +113,20 @@ a {
 @media screen {
   body {
     margin: 0;
-    font-size: 13px;
+    font-size: 20px;
   }
+
+  .largeFont {
+    font-size: 28px;
+  }
+
+  .smallFont {
+    font-size: 18px;
+  }
+
   #resume {
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 1010px;
     padding: 0.5em 1em;
     border: none;
   }
