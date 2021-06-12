@@ -1,16 +1,16 @@
 {
   "basics": {
-    "name": "Le Hoai Nham",
-    "label": "Software Engineer, Development Operations",
+    "name": "Hoai-Nham Le",
+    "label": "Site Reliability Engineer",
     "picture": "nhamlh_2017.png",
     "email": "lehoainham@gmail.com",
     "phone": "+84 909404290",
     "website": "https://nhamlh.space",
-    "summary": "I'm a Software Engineer, specialized in Development Operations. I've been helping organizations build great products since 2014. Most of my free time is spent learning new technologies. I have a huge passion for Linux and the open source community. Things that I'm currently focus on right now are Linux, DevOps tools, and the Python language.",
+    "summary": "I'm a Software Engineer, specialized in Site Reliability Engineering. I've been helping organizations build great products since 2014. Most of my free time is spent learning new technologies. I have a huge passion for Linux and the open source community.",
     "location": {
-      "address": "311/1 Huynh Tan Phat",
+      "address": "",
       "city": "Ho Chi Minh",
-      "countryCode": "VN"
+      "countryCode": "Vietnam"
     },
     "profiles": [
       {
@@ -32,10 +32,26 @@
   },
   "work": [
     {
-      "company": "Fossil VN - Misfit",
+      "company": "Employment Hero",
+      "position": "Senior Platform Engineer",
+      "website": "https://employmenthero.com/",
+      "startDate": "2018-10-01",
+      "summary": "Employment Hero is a software that helps small and medium Australian businesses manage HR, payroll, employee engagement and benefits.",
+      "highlights": [
+        "Build K8S based infrastructure on AWS for microservices.",
+        "Build CI/CD pipelines using CircleCI, Flux, Helm.",
+        "Build observability platform using Prometheus, Opsgenie, LogDNA, and Jaeger tracing.",
+        "Build in-house tools to manage, automate and optimize infrastructure using shell script, Ruby and Golang.",
+        "Manage centralized logging system built upon ELK, using filebeat agents to collect logs from multiple sources",
+        "Platform governance: API gateway, service mesh, Postgresql, Redis, Kafka, etc."
+      ]
+    },
+    {
+      "company": "Misfit (Fossil VN)",
       "position": "DevOps Engineer",
-      "website": "https://misfit.com/",
+      "website": "https://fossilgroup.com/",
       "startDate": "2016-08-08",
+      "endDate": "2018-09-30",
       "summary": "Misfit is an American consumer electronics company specializing in wearable technology that utilizes sensors and home automation products. Misfit then was acquired by Fossil Group in late 2015.",
       "highlights": [
         "Plan and build AWS based infrastructure for backend team",
@@ -76,19 +92,6 @@
         "Guard against local users via squid proxy, analyze http traffic through ELK to spot suspicious behaviors",
         "Build, manage and backup VMware ESXi."
       ]
-    },
-    {
-      "company": "vHost.vn",
-      "position": "Technical support (part-time)",
-      "website": "https://vhost.vn",
-      "startDate": "2013-10-01",
-      "endDate": "2014-07-01",
-      "summary": "vHost.vn is one of the fastest growing hosting providers in Vietnam.",
-      "highlights": [
-        "Support customers to install web server, mail server, and troubleshoot hosting problems.",
-        "Monitor system status using zabbix.",
-        "Collect and analyze system logs using graylog2."
-      ]
     }
   ],
   "education": [
@@ -105,6 +108,7 @@
     {
       "name": "Programming",
       "keywords": [
+        "Ruby",
         "Python",
         "Golang",
         "Shell script"
@@ -112,19 +116,16 @@
     },
     {
       "name": "Linux system",
-      "level": "Good",
       "keywords": [
         "Troubleshooting",
         "Bash shell",
         "Iptables",
-        "Openvpn",
         "Nginx",
         "Postgresql"
       ]
     },
     {
       "name": "DevOps",
-      "level": "Intermediate",
       "keywords": [
         "Amazon web service (AWS)",
         "Kubernetes",
@@ -133,31 +134,27 @@
         "Ansible",
         "Jenkins",
         "Git",
-        "Gitlab",
         "ELK",
         "Kafka",
-        "Graylog2"
+        "Postgres"
       ]
     }
   ],
   "languages": [
     {
       "name": "Vietnamese",
-      "level": "Native speaker"
+      "fluency": "Native speaker"
     },
     {
-      "name": "English",
-      "level": "Intermediate"
+      "name": "English"
     }
   ],
   "interests": [
     {
-      "name": "Reading",
-      "keywords": [
-        "Literature",
-        "Philosophy",
-        "Economy"
-      ]
+      "name": "Reading"
+    },
+    {
+      "name": "Badminton"
     }
   ],
   "references": [
