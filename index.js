@@ -1,1 +1,1 @@
-module.exports = require('jsonresume-theme-rocketspacer');
+module.exports = require('jsonresume-theme-nhamlh');
