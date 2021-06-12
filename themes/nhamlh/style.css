@@ -133,6 +133,10 @@ a {
   .sectionName {
     width: auto;
   }
+
+  .phone {
+    display: none;
+  }
 }
 
 @media print {
