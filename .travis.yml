@@ -6,7 +6,7 @@ cache:
     - node_modules
 install:
   - npm prune
-  - npm install
+  - npm install --no-audit
 script:
   - npm run build
 deploy:
