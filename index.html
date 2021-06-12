@@ -1,832 +1,409 @@
+<!doctype html>
+<html>
+	<head>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, user-scalable=no, minimal-ui'>
 
-  <title>Le Hoai Nham</title>
+	<title>Hoai-Nham Le</title>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-
-  
-    <style type="text/css">@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
-
-body {
-	background: #fff;
-	font-family: Lato, sans-serif;
-	font-weight: 300;
-	color: #333;
-	margin: 0 0 80px;
-	font-size: 15px;
+	<style>
+	body {
+  background: #EEEEEE;
+  font: 13px "Times New Roman", Times, sans-serif;
+  line-height: 1.4;
+  margin: 40px 0;
 }
-
-a {
-	color: #E32B46;
+em {
+  color: #999;
 }
-
-a:focus, a:hover {
-	color: #333;
-	text-decoration: none;
-}
-
-strong {
-	font-size: smaller;
-	font-weight: 400;
-	color: #333;
-}
-
 p {
-	line-height: 1.5;
-	margin: 0 0 .5em 0;
+  line-height: 1.4;
 }
-
-p + p {
-	margin-top: 10px;
+ul {
+  margin-bottom: 0;
 }
-
-h1, h2, h3, h4 {
-	margin-top: 0;
-	font-weight: 300;
-	color: #555;
-}
-
-section {
-	margin-top: 24px;
-}
-
-ul, ol {
-	padding-left: 21px;
-}
-
 li {
-	line-height: 1.8;
-	list-style: none;
+  margin-bottom: 2px;
+}
+a {
+  text-decoration: none;
 }
 
-li:before {
-	content: "\f052";
-	float: left;
-	font: 16px Octicons;
-	margin-top: 6px;
-	margin-left: -20px;
-	opacity: .1;
-	position: absolute;
+#resume {
+  margin: 0 auto;
+  /* max-width: 600px; */
+  padding: 80px 100px;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 4px #aaa;
+  -webkit-box-shadow: 2px 2px 4px #aaa;
 }
 
-blockquote {
-  border-left: 3px solid #e7e9ec;
-  font-size: 14px;
+.coursesList {
+  width: 28%;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.largeFont {
+  font-size: 22px;
+}
+
+.smallFont {
+  font-size: 12px;
+}
+
+.sectionBlock {
+  display: flex;
+  width: 100%;
+  margin-top: 12px;
+  page-break-inside: avoid;
+}
+
+.sectionName {
+  width: 18%;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.sectionContent {
+  width: 80%;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.sectionContent ul {
+  padding-left: 20px;
+  margin-top: 6px;
+  list-style-type: circle;
+}
+
+.sectionContent .title {
+  font-weight: bold;
+}
+
+.sectionContent .date {
+  float: right;
+}
+
+.sectionContent .separator {
+  height: 14px;
+}
+
+.sectionLine {
+  /* border-style: dashed; */
+  border-style: solid;
+  border-width: 1px;
+  border-color: #CFCFCF;
+  margin-top: 0.5px;
+  margin-bottom: 5px;
+}
+
+.divider {
+  font-weight: bold;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.summary {
+  margin-top: 6px;
+}
+
+.skillBlock {
   margin-bottom: 4px;
 }
 
-em {
-	color: #666;
-	font-weight: 300;
-	font-style: normal;
+.jobBlock {
+  page-break-inside: avoid;
 }
 
-h4 span:first-child {
-	color: #333;
-	font-weight: 400;
-}
-
-.container {
-	max-width: 750px;
-	padding: 0 30px;
-}
-
-.col-sm-6 {
-	margin-bottom: 10px;
-}
-
-.col-sm-12 h4 {
-	margin-top: 12px;
-}
-
-.col-sm-12 + .col-sm-12 {
-	margin-top: 30px;
-}
-
-#header {
-	padding: 50px 0 25px;
-}
-
-#header h2 {
-	color: #95a5a6;
-	font-size: 24px;
-}
-
-#content h3 {
-	color: #555;
-	font-size: 26px;
-	margin-top: -4px;
-}
-
-#content aside {
-	text-align: right;
-	padding-right: 30px;
-}
-
-#profiles .network {
-	text-transform: capitalize;
-}
-
-#work .position,
-#volunteer .position {
-	font-weight: 400;
-	margin-bottom: 8px;
-}
-
-#education .area {
-	font-weight: 400;
-}
-
-#education .area:before {
-	content: "\f0d7";
-	font: 16px Octicons;
-	margin-right: 6px;
-}
-
-#education .studyType {
-	margin-left: 25px;
-}
-
-#awards .summary,
-#publications .summary {
-	margin-top: 8px;
-}
-
-#publications .website a:before {
-	content: attr(href);
-}
-
-@media (min-width: 480px) {
-	.strike-through {
-		border-top: 1px solid #f4f6f6;
-		height: 20px;
-		margin-top: 12px;
-		margin-bottom: -2px;
-		position: relative;
+/* Media Queries */
+/* @media only screen and (max-width: 40em) { */
+@media screen {
+  body {
+    margin: 0;
+    font-size: 13px;
+  }
+  #resume {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 0.5em 1em;
+    border: none;
+  }
+  .sectionBlock {
+    flex-direction: column;
+  }
+  .sectionContent {
+    width: 100%;
+  }
+  .sectionContent .date {
+    padding-right: 2em;
+  }
+  .sectionName {
+    width: auto;
   }
 
-	.strike-through span,
-	.strike-through a {
-		background: #fff;
-		position: absolute;
+  .phone {
+    display: none;
   }
-
-	.strike-through span:first-child {
-		padding-right: 20px;
-		margin-top: -12px;
-  }
-
-	.strike-through span + span {
-		font-size: 14px;
-		margin-top: -10px;
-		padding-left: 20px;
-		right: 0;
-	}
-}
-
-@media (max-width: 768px) {
-	.col-sm-6:last-child {
-		margin-bottom: 0px;
-  }
-
-	#content aside {
-		margin-bottom: 20px;
-		padding-right: 0;
-		text-align: left;
-  }
-
-	#publications .website a:before {
-		content: "View publication";
-	}
-}
-
-@media (max-width: 480px) {
-	h1 {
-		font-size: 28px;
-  }
-
-	#header h2 {
-		font-size: 24px;
-  }
-
-	#content h3 {
-		font-size: 20px;
-  }
-
-	h4 {
-		font-size: 16px;
-  }
-
-	.date {
-		font-size: 14px;
-		margin-bottom: 5px;
-  }
-
-	.strike-through span:first-child {
-		margin-bottom: 7px;
-  }
-
-	.strike-through span {
-		display: block;
-  }
-
-	#header {
-		padding: 30px 0 0;
-  }
-
-	#actions {
-		display: none;
-	}
 }
 
 @media print {
-	body {
-		font-size: 12px;
+  body {
+    background: #FFFFFF;
+  }
+  #resume {
+    margin: 0 auto;
+    /* max-width: 600px; */
+    padding: 0px 0px;
+    border: 0px;
+    background: #fff;
+    box-shadow: none;
+    -webkit-box-shadow: none;
   }
 
-	a[href]:after {
-		display: none;
+  .sectionBlock {
+    flex-direction: column;
   }
 
-	h1 {
-		font-size: 24px;
-  }
-
-	#header h2 {
-		font-size: 18px;
-		margin-top: -8px;
-  }
-
-	h4 {
-		font-size: 13px;
-  }
-
-  #header {
-		padding: 0;
-	}
-
-	#content aside {
-		margin: 0 !important;
-	}
-
-	#content h3 {
-		font-size: 16px;
-		margin-top: 0;
-	}
-
-	blockquote {
-		border: 0;
-		border-left: 3px solid #e7e9ec;
-		font-size: 12px;
-	}
-
-	li:before {
-		font: 10px Octicons;
-	}
-
-	.strike-through {
-		border-top-color: transparent;
-  }
-
-	.strike-through span + span {
-		font-size: 12px;
-  }
-
-	.col-sm-push-3 {
-    left: 25%;
-  }
-
-	.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
-    float: left;
-  }
-
-	.col-sm-12 {
-	  width: 100%;
-  }
-
-	.col-sm-11 {
-	  width: 91.66666666666666%;
-  }
-
-	.col-sm-10 {
-	  width: 83.33333333333334%;
-  }
-
-	.col-sm-9 {
-	  width: 75%;
-  }
-
-	.col-sm-8 {
-	  width: 66.66666666666666%;
-  }
-
-	.col-sm-7 {
-	  width: 58.333333333333336%;
-  }
-
-	.col-sm-6 {
-	  width: 50%;
-  }
-
-	.col-sm-5 {
-	  width: 41.66666666666667%;
-  }
-
-	.col-sm-4 {
-	  width: 33.33333333333333%;
-  }
-
-	.col-sm-3 {
-	  width: 25%;
-  }
-
-	.col-sm-2 {
-	  width: 16.666666666666664%;
-  }
-
-	.col-sm-1 {
-	  width: 8.333333333333332%;
+  a {
+    color: black;
   }
 }
-</style>
-  
-</head>
-<body>
-  <!-- HEADER -->
-  <header id="header">
-		<div class="container">
-			<div class="row">
-        <div class="col-sm-3">
-          <img src="nhamlh_2017.png" class="img-responsive img-circle pull-right" style="max-height: 88px">
-        </div>
-				<div class="col-sm-9">
-          <h1>Le Hoai Nham</h1>
-          <h2>Software Engineer, Development Operations</h2>
-				</div>
-			</div>
-		</div>
-	</header>
 
-  <!-- CONTENT: Re-arrange sections order if necessary -->
-  <div id="content" class="container">
-    <!-- Contact -->
-    
+	</style>
 
+	</head>
+	<body>
 
-  <section id="contact" class="row">
-    <aside class="col-sm-3"><h3>Contact</h3></aside>
-    <div class="col-sm-9">
-      <div class="row">
-        <div class="col-sm-6">
-          <strong>Email</strong>
-          <div>
-            <a target="_blank" href="mailto:lehoainham@gmail.com">lehoainham@gmail.com</a>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <strong>Phone</strong>
-          <div class="phone">+84 909404xxx</div>
-        </div>
-        <div class="col-sm-6">
-          <strong>Website</strong>
-          <div>
-            <a target="_blank" href="https://nhamlh.space">https://nhamlh.space</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-    <!-- About -->
-    
-
-
-  <section id="about" class="row">
-    <aside class="col-sm-3">
-      <h3>About</h3>
-    </aside>
-    <div class="col-sm-9">
-      <p>I&#39;m a Software Engineer, specialized in Development Operations. I&#39;ve been helping organizations build great products since 2014. Most of my free time is spent learning new technologies. I have a huge passion for Linux and the open source community. Things that I&#39;m currently focus on right now are Linux, DevOps tools, and the Python language.</p>
-    </div>
-  </section>
-
-
-    <!-- Profiles -->
-    
-
-
-  <section id="profiles" class="row">
-    <aside class="col-sm-3">
-      <h3>Profiles</h3>
-    </aside>
-    <div class="col-sm-9">
-      <div class="row">
-        
-          <div class="col-sm-6">
-            <strong class="network">Github</strong>
-            <div class="url">
-              <a target="_blank" href="https://github.com/nhamlh">nhamlh</a>
-            </div>
-          </div>
-        
-          <div class="col-sm-6">
-            <strong class="network">Twitter</strong>
-            <div class="url">
-              <a target="_blank" href="https://twitter.com/nhamlh">nhamlh</a>
-            </div>
-          </div>
-        
-          <div class="col-sm-6">
-            <strong class="network">Linkedin</strong>
-            <div class="url">
-              <a target="_blank" href="https://linkedin.com/nhamlh">nhamlh</a>
-            </div>
-          </div>
-        
-      </div>
-    </div>
-  </section>
-
-
-    <!-- Work -->
-    
-
-
-  <section id="work" class="row">
-    <aside class="col-sm-3">
-      <h3>Work</h3>
-    </aside>
-    <div class="col-sm-9">
-      <div class="row">
-        
-          <div class="col-sm-12">
-            <h4 class="strike-through">
-              <span>Fossil VN - Misfit</span>
-              <span class="date">
-                August 2016 — Now
-              </span>
-            </h4>
-            <div class="website pull-right">
-              <a target="_blank" href="https://misfit.com/">https://misfit.com/</a>
-            </div>
-            <div class="position">
-              DevOps Engineer
-            </div>
-            <div class="summary">
-              <p>Misfit is an American consumer electronics company specializing in wearable technology that utilizes sensors and home automation products. Misfit then was acquired by Fossil Group in late 2015.</p>
-            </div>
-            
-              <p><strong>Highlights</strong></p>
-              <ul class="highlights">
-                
-                  <li class="bullet">Plan and build AWS based infrastructure for backend team</li>
-                
-                  <li class="bullet">Kubernetes the hard way on AWS using kops, plan and migrate system running on AWS ECS to K8S without downtime</li>
-                
-                  <li class="bullet">Deploy, manage and stablize many services on kubernetes like graylog2, elasticsearch, kafka, prometheus, sentry</li>
-                
-                  <li class="bullet">Monitor kubernetes and services using prometheus and grafana, get notified via telegram or slack</li>
-                
-                  <li class="bullet">Manage centralized logging system built upon ELK, using filebeat agents to collect logs from multiple sources</li>
-                
-                  <li class="bullet">Build in-house tools to manage, automate and optimize infrastructure using shell script, python and golang</li>
-                
-                  <li class="bullet">Plan, design and create CI/CD process for development team using Jenkins, Bitbucket pipelines and Kubernetes</li>
-                
-              </ul>
-            
-          </div>
-        
-          <div class="col-sm-12">
-            <h4 class="strike-through">
-              <span>Posiba</span>
-              <span class="date">
-                January 2016 — July 2016
-              </span>
-            </h4>
-            <div class="website pull-right">
-              <a target="_blank" href="https://posiba.com/">https://posiba.com/</a>
-            </div>
-            <div class="position">
-              Cloud Operation Engineer
-            </div>
-            <div class="summary">
-              <p>Posiba is an information service for the social sector dedicated to helping those working for public good make greater positive impact.</p>
-            </div>
-            
-              <p><strong>Highlights</strong></p>
-              <ul class="highlights">
-                
-                  <li class="bullet">Manage linux instances on AWS using puppet.</li>
-                
-                  <li class="bullet">Monitor infrastructure components using zabbix, get notified via telegram.</li>
-                
-                  <li class="bullet">Collect system and application logs using fluentd, elasticsearch and kibana.</li>
-                
-                  <li class="bullet">Build in-house devops tools using shell script and python.</li>
-                
-                  <li class="bullet">Help developers to roll out projects using devops tools: puppet, jenkins, docker.</li>
-                
-              </ul>
-            
-          </div>
-        
-          <div class="col-sm-12">
-            <h4 class="strike-through">
-              <span>FPT Telecom</span>
-              <span class="date">
-                July 2014 — January 2016
-              </span>
-            </h4>
-            <div class="website pull-right">
-              <a target="_blank" href="https://fpt.vn">https://fpt.vn</a>
-            </div>
-            <div class="position">
-              Linux system administrator
-            </div>
-            <div class="summary">
-              <p>FPT Telecom is one of biggest ISPs in Vietnam.</p>
-            </div>
-            
-              <p><strong>Highlights</strong></p>
-              <ul class="highlights">
-                
-                  <li class="bullet">Build and monitor linux systems and network devices using icinga2 and cacti.</li>
-                
-                  <li class="bullet">Manage linux servers with many roles: DNS clusters, email gateway, monitoring servers, etc. </li>
-                
-                  <li class="bullet">Develop ansible playbooks to manage multiple linux servers.</li>
-                
-                  <li class="bullet">Guard against local users via squid proxy, analyze http traffic through ELK to spot suspicious behaviors</li>
-                
-                  <li class="bullet">Build, manage and backup VMware ESXi.</li>
-                
-              </ul>
-            
-          </div>
-        
-          <div class="col-sm-12">
-            <h4 class="strike-through">
-              <span>vHost.vn</span>
-              <span class="date">
-                October 2013 — July 2014
-              </span>
-            </h4>
-            <div class="website pull-right">
-              <a target="_blank" href="https://vhost.vn">https://vhost.vn</a>
-            </div>
-            <div class="position">
-              Technical support (part-time)
-            </div>
-            <div class="summary">
-              <p>vHost.vn is one of the fastest growing hosting providers in Vietnam.</p>
-            </div>
-            
-              <p><strong>Highlights</strong></p>
-              <ul class="highlights">
-                
-                  <li class="bullet">Support customers to install web server, mail server, and troubleshoot hosting problems.</li>
-                
-                  <li class="bullet">Monitor system status using zabbix.</li>
-                
-                  <li class="bullet">Collect and analyze system logs using graylog2.</li>
-                
-              </ul>
-            
-          </div>
-        
-      </div>
-    </div>
-  </section>
-
-
-    <!-- Skills -->
-    
-
-
-  <section id="skills" class="row">
-    <aside class="col-sm-3">
-      <h3>Skills</h3>
-    </aside>
-    <div class="col-sm-9">
-      <div class="row">
-        
-          <div class="col-sm-6">
-            <div class="name">
-              <h4>Programming</h4>
-            </div>
-            
-              <ul class="keywords">
-                
-                  <li>Python</li>
-                
-                  <li>Golang</li>
-                
-                  <li>Shell script</li>
-                
-              </ul>
-            
-          </div>
-        
-          <div class="col-sm-6">
-            <div class="name">
-              <h4>Linux system</h4>
-            </div>
-            
-              <ul class="keywords">
-                
-                  <li>Troubleshooting</li>
-                
-                  <li>Bash shell</li>
-                
-                  <li>Iptables</li>
-                
-                  <li>Openvpn</li>
-                
-                  <li>Nginx</li>
-                
-                  <li>Postgresql</li>
-                
-              </ul>
-            
-          </div>
-        
-          <div class="col-sm-6">
-            <div class="name">
-              <h4>DevOps</h4>
-            </div>
-            
-              <ul class="keywords">
-                
-                  <li>Amazon web service (AWS)</li>
-                
-                  <li>Kubernetes</li>
-                
-                  <li>Docker</li>
-                
-                  <li>Puppet</li>
-                
-                  <li>Ansible</li>
-                
-                  <li>Jenkins</li>
-                
-                  <li>Git</li>
-                
-                  <li>Gitlab</li>
-                
-                  <li>ELK</li>
-                
-                  <li>Kafka</li>
-                
-                  <li>Graylog2</li>
-                
-              </ul>
-            
-          </div>
-        
-      </div>
-    </div>
-  </section>
-
-
-    <!-- Education -->
-    
-
-
-  <section id="education" class="row">
-    <aside class="col-sm-3">
-      <h3>Education</h3>
-    </aside>
-    <div class="col-sm-9">
-      <div class="row">
-        
-          <div class="col-sm-12">
-            <h4 class="strike-through">
-              <span>Ho Chi Minh University of Sciences</span>
-              <span class="date">
-                September 2010 — July 2014
-              </span>
-            </h4>
-            <div class="area">Information Technology</div>
-            <div class="studyType">
-              Bachelor
-              
-                (7.75/10)
-              
-            </div>
-            
-          </div>
-        
-      </div>
-    </div>
-  </section>
-
-
-    <!-- Awards -->
-    
-
-
-
-
-    <!-- Volunteer -->
-    
-
-
-
-    <!-- Publications -->
-    
-
-
-
-    <!-- Languages -->
-    
-
-
-  <section id="languages" class="row">
-    <aside class="col-sm-3">
-      <h3>Languages</h3>
-    </aside>
-    <div class="col-sm-9">
-      <div class="row">
-        
-          <div class="col-sm-6">
-            <div class="language"><strong>Vietnamese</strong></div>
-            <div class="fluency">Native speaker</div>
-          </div>
-        
-          <div class="col-sm-6">
-            <div class="language"><strong>English</strong></div>
-            <div class="fluency">Intermediate</div>
-          </div>
-        
-      </div>
-    </div>
-  </section>
-
-
-    <!-- Interests -->
-    
-
-
-  <section id="interests" class="row">
-    <aside class="col-sm-3">
-      <h3>Interests</h3>
-    </aside>
-    <div class="col-sm-9">
-      <div class="row">
-        
-          <div class="col-sm-6">
-            <div class="name">
-              <h4>Reading</h4>
-            </div>
-            <ul class="keywords">
-              
-                <li>Literature</li>
-              
-                <li>Philosophy</li>
-              
-                <li>Economy</li>
-              
-            </ul>
-          </div>
-        
-      </div>
-    </div>
-  </section>
-
-
-    <!-- References -->
-    
-
-
-  <section id="references" class="row">
-    <aside class="col-sm-3">
-      <h3>References</h3>
-    </aside>
-    <div class="col-sm-9">
-      <div class="row">
-        
-          <div class="col-sm-11">
-            <p></p>
-            <p class="name">
-              <strong>— Ky-Anh Huynh &lt;xkyanh@gmail.com&gt;</strong></p>
-            </p>
-            <br>
-          </div>
-        
-      </div>
-    </div>
-  </section>
-
-
+	<div id='resume'>
+  <div id='nameBlock' class='largeFont'>
+    <span class='name'>
+      Hoai-Nham Le,
+    </span>
+    <span class='label'>Site Reliability Engineer</span>
   </div>
-</body>
+  <div id='basicsBlock' class='smallFont'>
+    <div class='contactBlock'>
+      <span class='email'>lehoainham@gmail.com</span>
+      <span class='divider'>|</span>
+      <span class='phone'>+84 909404xxx</span>
+        <span class='divider'>|</span>
+        <span class='address'>
+          Ho Chi Minh, Vietnam
+        </span>
+    </div>
+      <div id='profilesBlock'>
+            <span class='url'>
+              <a href='https://github.com/nhamlh'>Github</a>
+            </span>
+            <span class='divider'>|</span>
+            <span class='url'>
+              <a href='https://twitter.com/nhamlh'>Twitter</a>
+            </span>
+            <span class='divider'>|</span>
+            <span class='url'>
+              <a href='https://linkedin.com/nhamlh'>Linkedin</a>
+            </span>
+            
+      </div>
+  </div>
+
+  <div id='summaryBlock' class="sectionBlock">
+    <div class='sectionName'>
+      <span>SUMMARY</span>
+    </div>
+    <div class='sectionLine'></div>
+    <div class='sectionContent'>
+      <span>I&#x27;m a Software Engineer, specialized in Site Reliability Engineering. I&#x27;ve been helping organizations build great products since 2014. Most of my free time is spent learning new technologies. I have a huge passion for Linux and the open source community.</span>
+    </div>
+  </div>
+
+  <div id='workBlock' class="sectionBlock">
+    <div class='sectionName'>
+      <span>EXPERIENCE</span>
+    </div>
+    <div class='sectionLine'></div>
+    <div class='sectionContent'>
+			<div class="jobBlock">
+	      <div class='blockHeader'>
+	        <span class='title'>
+	          Employment Hero - Senior Platform Engineer
+	        </span>
+	        <span class='date'>
+	          2018-10-01 &mdash; Present
+	        </span>
+	      </div>
+	      <div><a href='https://employmenthero.com/'>https://employmenthero.com/</a></div>
+	      <ul class='highlights'>
+	        <li>Build K8S based infrastructure on AWS for microservices.</li>
+	        <li>Build CI/CD pipelines using CircleCI, Flux, Helm.</li>
+	        <li>Build observability platform using Prometheus, Opsgenie, LogDNA, and Jaeger tracing.</li>
+	        <li>Build in-house tools to manage, automate and optimize infrastructure using shell script, Ruby and Golang.</li>
+	        <li>Manage centralized logging system built upon ELK, using filebeat agents to collect logs from multiple sources</li>
+	        <li>Platform governance: API gateway, service mesh, Postgresql, Redis, Kafka, etc.</li>
+	      </ul>
+	      <div class='separator'></div>
+			</div>
+			<div class="jobBlock">
+	      <div class='blockHeader'>
+	        <span class='title'>
+	          Misfit (Fossil VN) - DevOps Engineer
+	        </span>
+	        <span class='date'>
+	          2016-08-08 &mdash; 2018-09-30
+	        </span>
+	      </div>
+	      <div><a href='https://fossilgroup.com/'>https://fossilgroup.com/</a></div>
+	      <ul class='highlights'>
+	        <li>Plan and build AWS based infrastructure for backend team</li>
+	        <li>Kubernetes the hard way on AWS using kops, plan and migrate system running on AWS ECS to K8S without downtime</li>
+	        <li>Deploy, manage and stablize many services on kubernetes like graylog2, elasticsearch, kafka, prometheus, sentry</li>
+	        <li>Monitor kubernetes and services using prometheus and grafana, get notified via telegram or slack</li>
+	        <li>Manage centralized logging system built upon ELK, using filebeat agents to collect logs from multiple sources</li>
+	        <li>Build in-house tools to manage, automate and optimize infrastructure using shell script, python and golang</li>
+	        <li>Plan, design and create CI/CD process for development team using Jenkins, Bitbucket pipelines and Kubernetes</li>
+	      </ul>
+	      <div class='separator'></div>
+			</div>
+			<div class="jobBlock">
+	      <div class='blockHeader'>
+	        <span class='title'>
+	          Posiba - Cloud Operation Engineer
+	        </span>
+	        <span class='date'>
+	          2016-01-21 &mdash; 2016-07-30
+	        </span>
+	      </div>
+	      <div><a href='https://posiba.com/'>https://posiba.com/</a></div>
+	      <ul class='highlights'>
+	        <li>Manage linux instances on AWS using puppet.</li>
+	        <li>Monitor infrastructure components using zabbix, get notified via telegram.</li>
+	        <li>Collect system and application logs using fluentd, elasticsearch and kibana.</li>
+	        <li>Build in-house devops tools using shell script and python.</li>
+	        <li>Help developers to roll out projects using devops tools: puppet, jenkins, docker.</li>
+	      </ul>
+	      <div class='separator'></div>
+			</div>
+			<div class="jobBlock">
+	      <div class='blockHeader'>
+	        <span class='title'>
+	          FPT Telecom - Linux system administrator
+	        </span>
+	        <span class='date'>
+	          2014-07-16 &mdash; 2016-01-15
+	        </span>
+	      </div>
+	      <div><a href='https://fpt.vn'>https://fpt.vn</a></div>
+	      <ul class='highlights'>
+	        <li>Build and monitor linux systems and network devices using icinga2 and cacti.</li>
+	        <li>Manage linux servers with many roles: DNS clusters, email gateway, monitoring servers, etc. </li>
+	        <li>Develop ansible playbooks to manage multiple linux servers.</li>
+	        <li>Guard against local users via squid proxy, analyze http traffic through ELK to spot suspicious behaviors</li>
+	        <li>Build, manage and backup VMware ESXi.</li>
+	      </ul>
+	      
+			</div>
+    </div>
+  </div>
+
+
+
+
+	<div id='education' class="sectionBlock">
+    <div class='sectionName'>
+      <span>EDUCATION</span>
+    </div>
+    <div class='sectionLine'></div>
+    <div class='sectionContent'>
+      <div class='educationBlock'>
+        <span class='title'>
+          Ho Chi Minh University of Sciences
+        </span>
+        <span class='date'>
+          2010-09-01 &mdash; 2014-07-15
+        </span>
+        <div class=''>
+          Bachelor  - Information Technology, GPA: 7.75/10
+        </div>
+      </div>
+      
+    </div>
+	</div>
+
+	<div id='skills' class="sectionBlock">
+    <div class='sectionName'>
+      <span>SKILLS</span>
+    </div>
+    <div class='sectionLine'></div>
+    <div class='sectionContent'>
+      <div class='skillBlock'>
+        <span class='title'>Programming:</span>
+          <span>Ruby</span>, 
+          <span>Python</span>, 
+          <span>Golang</span>, 
+          <span>Shell script</span>
+      </div>
+      <div class='skillBlock'>
+        <span class='title'>Linux system:</span>
+          <span>Troubleshooting</span>, 
+          <span>Bash shell</span>, 
+          <span>Iptables</span>, 
+          <span>Nginx</span>, 
+          <span>Postgresql</span>
+      </div>
+      <div class='skillBlock'>
+        <span class='title'>DevOps:</span>
+          <span>Amazon web service (AWS)</span>, 
+          <span>Kubernetes</span>, 
+          <span>Docker</span>, 
+          <span>Puppet</span>, 
+          <span>Ansible</span>, 
+          <span>Jenkins</span>, 
+          <span>Git</span>, 
+          <span>ELK</span>, 
+          <span>Kafka</span>, 
+          <span>Postgres</span>
+      </div>
+    </div>
+	</div>
+
+	<div id='languages' class="sectionBlock">
+    <div class='sectionName'>
+      <span>LANGUAGES</span>
+    </div>
+    <div class='sectionLine'></div>
+    <div class='sectionContent'>
+      <span class='language'>Vietnamese</span>
+      <span class='fluency'><em>(Native speaker)</em></span>
+      <span>,</span>
+      <span class='language'>English</span>
+      
+    </div>
+	</div>
+
+	<div id='interests' class="sectionBlock">
+    <div class='sectionName'>
+      <span>INTERESTS</span>
+    </div>
+    <div class='sectionLine'></div>
+    <div class='sectionContent'>
+      <span class='name'>Reading</span><!--
+      --><span>, </span>
+      <span class='name'>Badminton</span><!--
+      -->
+    </div>
+	</div>
+
+	<div id='references' class="sectionBlock">
+    <div class='sectionName'>
+      <span>REFERENCES</span>
+    </div>
+    <div class='sectionContent'>
+      <span class='name'>Ky-Anh Huynh &lt;xkyanh@gmail.com&gt;</span>
+      
+    </div>
+	</div>
+	</body>
 </html>
