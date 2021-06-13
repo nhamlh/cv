@@ -41,7 +41,6 @@
         "Build CI/CD pipelines using CircleCI, Flux, Helm.",
         "Build observability platform using Prometheus, Opsgenie, LogDNA, and Jaeger tracing.",
         "Build in-house tools to manage, automate and optimize infrastructure using shell script, Ruby and Golang.",
-        "Manage centralized logging system built upon ELK, using filebeat agents to collect logs from multiple sources",
         "Platform governance: API gateway, service mesh, Postgresql, Redis, Kafka, etc."
       ]
     },
@@ -114,19 +113,23 @@
       ]
     },
     {
+      "name": "Cloud",
+      "keywords": [
+        "AWS certified",
+        "GCP"
+      ]
+    },
+    {
       "name": "Linux system",
       "keywords": [
         "Troubleshooting",
-        "Bash shell",
-        "Iptables",
-        "Nginx",
-        "Postgresql"
+        "TCP/IP",
+        "Bash shell"
       ]
     },
     {
       "name": "DevOps",
       "keywords": [
-        "Amazon web service (AWS)",
         "Kubernetes",
         "Docker",
         "Puppet",
