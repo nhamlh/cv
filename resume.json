@@ -37,7 +37,7 @@
       "startDate": "Oct 2018",
       "summary": "Employment Hero is a software that helps small and medium Australian businesses manage HR, payroll, employee engagement and benefits.",
       "highlights": [
-        "Build K8S based infrastructure on AWS for microservices.",
+        "Build Kubernetes based infrastructure on AWS for microservices.",
         "Build CI/CD pipelines using CircleCI, Flux, Helm.",
         "Build observability platform using Prometheus, Opsgenie, LogDNA, and Jaeger tracing.",
         "Build in-house tools to manage, automate and optimize infrastructure using shell script, Ruby and Golang.",
@@ -53,12 +53,13 @@
       "summary": "Misfit is an American consumer electronics company specializing in wearable technology that utilizes sensors and home automation products. Misfit then was acquired by Fossil Group in late 2015.",
       "highlights": [
         "Plan and build AWS based infrastructure for backend team",
-        "Kubernetes the hard way on AWS using kops, plan and migrate system running on AWS ECS to K8S without downtime",
+        "Kubernetes the hard way on AWS using kops.",
+        "Plan and migrate systems running on AWS ECS to Kubernetes without downtime",
         "Deploy, manage and stablize many services on kubernetes like graylog2, elasticsearch, kafka, prometheus, sentry",
-        "Monitor kubernetes and services using prometheus and grafana, get notified via telegram or slack",
+        "Monitor Kubernetes and services using Prometheus and Grafana, get notified via Telegram or Slack",
         "Manage centralized logging system built upon ELK, using filebeat agents to collect logs from multiple sources",
-        "Build in-house tools to manage, automate and optimize infrastructure using shell script, python and golang",
-        "Plan, design and create CI/CD process for development team using Jenkins, Bitbucket pipelines and Kubernetes"
+        "Build in-house tools to manage, automate and optimize infrastructure using shell script, Python",
+        "Plan, design and create CI/CD process for development team using Jenkins, Bitbucket pipelines"
       ]
     },
     {
@@ -69,11 +70,11 @@
       "endDate": "Jul 2016",
       "summary": "Posiba is an information service for the social sector dedicated to helping those working for public good make greater positive impact.",
       "highlights": [
-        "Manage linux instances on AWS using puppet.",
-        "Monitor infrastructure components using zabbix, get notified via telegram.",
-        "Collect system and application logs using fluentd, elasticsearch and kibana.",
-        "Build in-house devops tools using shell script and python.",
-        "Help developers to roll out projects using devops tools: puppet, jenkins, docker."
+        "Manage linux instances on AWS using Puppet.",
+        "Monitor infrastructure components using Zabbix, get notified via Telegram.",
+        "Collect system and application logs using Fluentd, Elasticsearch and Kibana.",
+        "Build in-house devops tools using shell script and Python.",
+        "Help developers to roll out projects using devops tools: Puppet, Jenkins, Docker."
       ]
     },
     {
@@ -84,10 +85,10 @@
       "endDate": "Jan 2016",
       "summary": "FPT Telecom is one of biggest ISPs in Vietnam.",
       "highlights": [
-        "Build and monitor linux systems and network devices using icinga2 and cacti.",
+        "Build and monitor linux systems and network devices using Icinga2 and Cacti.",
         "Manage linux servers with many roles: DNS clusters, email gateway, monitoring servers, etc. ",
-        "Develop ansible playbooks to manage multiple linux servers.",
-        "Guard against local users via squid proxy, analyze http traffic through ELK to spot suspicious behaviors",
+        "Develop Ansible playbooks to manage multiple linux servers.",
+        "Guard against local users via Squid proxy, analyze http traffic through ELK to spot suspicious behaviors",
         "Build, manage and backup VMware ESXi."
       ]
     }
