@@ -30,6 +30,10 @@ a {
   -webkit-box-shadow: 2px 2px 4px #aaa;
 }
 
+.center {
+  text-align: center;
+}
+
 .coursesList {
   width: 28%;
   vertical-align: top;
@@ -38,6 +42,7 @@ a {
 
 .largeFont {
   font-size: 22px;
+  font-weight: bold;
 }
 
 .smallFont {
@@ -52,6 +57,7 @@ a {
 }
 
 .sectionName {
+  font-weight: bold;
   width: 18%;
   vertical-align: top;
   display: inline-block;
@@ -84,9 +90,9 @@ a {
 .sectionLine {
   /* border-style: dashed; */
   border-style: solid;
-  border-width: 1px;
+  border-width: 2px;
   border-color: #CFCFCF;
-  margin-top: 0.5px;
+  margin-top: 0.2px;
   margin-bottom: 5px;
 }
 
@@ -150,8 +156,10 @@ a {
 
 @media print {
   body {
+    font-size: 20px;
     background: #FFFFFF;
   }
+
   #resume {
     margin: 0 auto;
     /* max-width: 600px; */

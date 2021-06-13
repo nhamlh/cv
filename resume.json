@@ -1,7 +1,6 @@
 {
   "basics": {
     "name": "Hoai-Nham Le",
-    "label": "Site Reliability Engineer",
     "picture": "nhamlh_2017.png",
     "email": "lehoainham@gmail.com",
     "phone": "+84 909404xxx",
@@ -35,7 +34,7 @@
       "company": "Employment Hero",
       "position": "Senior Platform Engineer",
       "website": "https://employmenthero.com/",
-      "startDate": "2018-10-01",
+      "startDate": "Oct 2018",
       "summary": "Employment Hero is a software that helps small and medium Australian businesses manage HR, payroll, employee engagement and benefits.",
       "highlights": [
         "Build K8S based infrastructure on AWS for microservices.",
@@ -50,8 +49,8 @@
       "company": "Misfit (Fossil VN)",
       "position": "DevOps Engineer",
       "website": "https://fossilgroup.com/",
-      "startDate": "2016-08-08",
-      "endDate": "2018-09-30",
+      "startDate": "Aug 2016",
+      "endDate": "Sep 2018",
       "summary": "Misfit is an American consumer electronics company specializing in wearable technology that utilizes sensors and home automation products. Misfit then was acquired by Fossil Group in late 2015.",
       "highlights": [
         "Plan and build AWS based infrastructure for backend team",
@@ -67,8 +66,8 @@
       "company": "Posiba",
       "position": "Cloud Operation Engineer",
       "website": "https://posiba.com/",
-      "startDate": "2016-01-21",
-      "endDate": "2016-07-30",
+      "startDate": "Jan 2016",
+      "endDate": "Jul 2016",
       "summary": "Posiba is an information service for the social sector dedicated to helping those working for public good make greater positive impact.",
       "highlights": [
         "Manage linux instances on AWS using puppet.",
@@ -82,8 +81,8 @@
       "company": "FPT Telecom",
       "position": "Linux system administrator",
       "website": "https://fpt.vn",
-      "startDate": "2014-07-16",
-      "endDate": "2016-01-15",
+      "startDate": "Jul 2014",
+      "endDate": "Jan 2016",
       "summary": "FPT Telecom is one of biggest ISPs in Vietnam.",
       "highlights": [
         "Build and monitor linux systems and network devices using icinga2 and cacti.",
@@ -99,8 +98,8 @@
       "institution": "Ho Chi Minh University of Sciences",
       "area": "Information Technology",
       "studyType": "Bachelor",
-      "startDate": "2010-09-01",
-      "endDate": "2014-07-15",
+      "startDate": "Sep 2010",
+      "endDate": "Jul 2014",
       "gpa": "7.75/10"
     }
   ],
@@ -149,17 +148,10 @@
       "name": "English"
     }
   ],
-  "interests": [
-    {
-      "name": "Reading"
-    },
-    {
-      "name": "Badminton"
-    }
-  ],
   "references": [
     {
-      "name": "Ky-Anh Huynh <xkyanh@gmail.com>"
+      "name": "Ky-Anh Huynh",
+      "contact": "https://www.linkedin.com/in/kyanh"
     }
   ]
 }

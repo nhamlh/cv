@@ -281,7 +281,7 @@
       {{#each resume.languages}}
       <span class='language'>{{name}}</span>
       {{#if fluency}}
-      <span class='fluency'><em>({{fluency}})</em></span>
+      <span class='fluency'><em>[{{fluency}}]</em></span>
       {{/if}}
       {{#unless @last}}<span>,</span>{{/unless}}
       {{/each}}
@@ -317,9 +317,10 @@
     <div class='sectionName'>
       <span>REFERENCES</span>
     </div>
+    <div class='sectionLine'></div>
     <div class='sectionContent'>
       {{#each resume.references}}
-      <span class='name'>{{name}}</span>
+      <span class='name'>{{name}}</span> <span class='name'><em>[{{contact}}]</em></span>
       {{#unless @last}}<span>, </span>{{/unless}}
       {{/each}}
     </div>
