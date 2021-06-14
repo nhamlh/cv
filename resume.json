@@ -5,7 +5,7 @@
     "email": "lehoainham@gmail.com",
     "phone": "+84 909404xxx",
     "website": "https://nhamlh.space",
-    "summary": "I'm a Software Engineer, specialized in Site Reliability Engineering. I've been helping organizations build great products since 2014. Most of my free time is spent learning new technologies. I have a huge passion for Linux and the open source community.",
+    "summary": "I'm  Site Reliability Engineer. I have solid understanding of operating system principles, distributed system principles, and networking. I've been helping organizations build great products since 2014. Most of my free time is spent learning new technologies. I have a huge passion for Linux and the open source community.",
     "location": {
       "address": "",
       "city": "Ho Chi Minh",
@@ -33,7 +33,7 @@
     {
       "company": "Employment Hero",
       "position": "Senior Platform Engineer",
-      "website": "https://employmenthero.com/",
+      "website": "https://employmenthero.com",
       "startDate": "Oct 2018",
       "summary": "Employment Hero is a software that helps small and medium Australian businesses manage HR, payroll, employee engagement and benefits.",
       "highlights": [
@@ -47,25 +47,25 @@
     {
       "company": "Misfit (Fossil VN)",
       "position": "DevOps Engineer",
-      "website": "https://fossilgroup.com/",
+      "website": "https://fossilgroup.com",
       "startDate": "Aug 2016",
       "endDate": "Sep 2018",
       "summary": "Misfit is an American consumer electronics company specializing in wearable technology that utilizes sensors and home automation products. Misfit then was acquired by Fossil Group in late 2015.",
       "highlights": [
-        "Plan and build AWS based infrastructure for backend team",
+        "Plan and build AWS based infrastructure for backend team.",
         "Kubernetes the hard way on AWS using kops.",
-        "Plan and migrate systems running on AWS ECS to Kubernetes without downtime",
-        "Deploy, manage and stablize many services on kubernetes like graylog2, elasticsearch, kafka, prometheus, sentry",
-        "Monitor Kubernetes and services using Prometheus and Grafana, get notified via Telegram or Slack",
-        "Manage centralized logging system built upon ELK, using filebeat agents to collect logs from multiple sources",
-        "Build in-house tools to manage, automate and optimize infrastructure using shell script, Python",
-        "Plan, design and create CI/CD process for development team using Jenkins, Bitbucket pipelines"
+        "Plan and migrate systems running on AWS ECS to Kubernetes without downtime.",
+        "Deploy, manage and stablize many services on Kubernetes: Graylog2, Elasticsearch, Kafka, Prometheus, Sentry.",
+        "Monitor Kubernetes and services using Prometheus and Grafana, get notified via Telegram or Slack.",
+        "Manage centralized logging system built upon Filebeat and ELK.",
+        "Build in-house tools to manage, automate and optimize infrastructure using shell script, Python.",
+        "Plan, design and create CI/CD process for development team using Jenkins, Bitbucket pipelines."
       ]
     },
     {
       "company": "Posiba",
       "position": "Cloud Operation Engineer",
-      "website": "https://posiba.com/",
+      "website": "https://posiba.com",
       "startDate": "Jan 2016",
       "endDate": "Jul 2016",
       "summary": "Posiba is an information service for the social sector dedicated to helping those working for public good make greater positive impact.",
@@ -85,10 +85,10 @@
       "endDate": "Jan 2016",
       "summary": "FPT Telecom is one of biggest ISPs in Vietnam.",
       "highlights": [
-        "Build and monitor linux systems and network devices using Icinga2 and Cacti.",
-        "Manage linux servers with many roles: DNS clusters, email gateway, monitoring servers, etc. ",
+        "Build and monitor Linux systems and network devices using Icinga2 and Cacti.",
+        "Manage Linux servers with many roles: DNS clusters, email gateway, monitoring servers, etc. ",
         "Develop Ansible playbooks to manage multiple linux servers.",
-        "Guard against local users via Squid proxy, analyze http traffic through ELK to spot suspicious behaviors",
+        "Manage internal users connectivity via Squid proxy",
         "Build, manage and backup VMware ESXi."
       ]
     }
@@ -121,11 +121,25 @@
       ]
     },
     {
-      "name": "Linux system",
+      "name": "Linux",
       "keywords": [
-        "Troubleshooting",
-        "TCP/IP",
-        "Bash shell"
+        "Solid understanding",
+        "Troubleshooting"
+      ]
+    },
+    {
+      "name": "Network",
+      "keywords": [
+        "TCP/IP network stack",
+        "Distributed system principles"
+      ]
+    },
+    {
+      "name": "Automation",
+      "keywords": [
+        "Puppet",
+        "Ansible",
+        "Terraform"
       ]
     },
     {
@@ -133,13 +147,9 @@
       "keywords": [
         "Kubernetes",
         "Docker",
-        "Puppet",
-        "Ansible",
-        "Jenkins",
         "Git",
-        "ELK",
-        "Kafka",
-        "Postgres"
+        "Jenkins",
+        "CircleCI"
       ]
     }
   ],
