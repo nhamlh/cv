@@ -7,7 +7,7 @@
     "website": "https://nhamlh.space",
     "summary": "I'm a Site Reliability Engineer. I have solid understanding of operating system principles, distributed system principles, and networking. I've been helping organizations build great products since 2014. Most of my free time is spent learning new technologies. I have a huge passion for Linux and the open source community.",
     "location": {
-      "address": "",
+      "address": " ",
       "city": "Ho Chi Minh",
       "countryCode": "Vietnam"
     },
@@ -106,51 +106,27 @@
   "skills": [
     {
       "name": "Programming",
-      "keywords": [
-        "Ruby",
-        "Python",
-        "Golang",
-        "Shell script"
-      ]
+      "keywords": ["Ruby", "Python", "Golang", "Shell script"]
     },
     {
       "name": "Cloud",
-      "keywords": [
-        "AWS certified",
-        "GCP"
-      ]
+      "keywords": ["AWS certified", "GCP"]
     },
     {
       "name": "Linux",
-      "keywords": [
-        "Solid understanding",
-        "Troubleshooting"
-      ]
+      "keywords": ["Solid understanding", "Troubleshooting"]
     },
     {
       "name": "Network",
-      "keywords": [
-        "TCP/IP network stack",
-        "Distributed system principles"
-      ]
+      "keywords": ["TCP/IP network stack", "Distributed system principles"]
     },
     {
       "name": "Automation",
-      "keywords": [
-        "Puppet",
-        "Ansible",
-        "Terraform"
-      ]
+      "keywords": ["Puppet", "Ansible", "Terraform"]
     },
     {
       "name": "DevOps",
-      "keywords": [
-        "Kubernetes",
-        "Docker",
-        "Git",
-        "Jenkins",
-        "CircleCI"
-      ]
+      "keywords": ["Kubernetes", "Docker", "Git", "Jenkins", "CircleCI"]
     }
   ],
   "languages": [
