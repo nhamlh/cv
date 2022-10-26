@@ -16,7 +16,7 @@
     "build-pdf": "resume export public/resume.pdf --theme nhamlh --format pdf --resume resume.json"
   },
   "dependencies": {
-    "jsonresume-theme-nhamlh": "./themes/nhamlh",
-    "resume-cli": "^3.0.4"
+    "jsonresume-theme-nhamlh": "file:themes/nhamlh",
+    "resume-cli": "^3.0.7"
   }
 }
