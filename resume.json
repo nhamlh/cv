@@ -5,7 +5,7 @@
     "email": "lehoainham@gmail.com",
     "phone": "+84 909404xxx",
     "website": "https://nhamlh.space",
-    "summary": "I'm a Site Reliability Engineer. I have solid understanding of operating system principles, distributed system principles, and networking. I've been helping organizations build great products since 2014. Most of my free time is spent learning new technologies. I have a huge passion for Linux and the open source community.",
+    "summary": "Site Reliability Engineer with more than 8+ years of experience building and delivering internal service platform for organizations.",
     "location": {
       "address": " ",
       "city": "Ho Chi Minh",
@@ -31,10 +31,24 @@
   },
   "work": [
     {
+      "company": "Y42",
+      "position": "Senior Infrastructure Engineer",
+      "website": "https://y42.com",
+      "startDate": "Mar 2022",
+      "summary": "Y42 is the full-stack data platform that anyone can run. Remove the complexity of managing multiple tools and start using a scalable data platform.",
+      "highlights": [
+        "Manage infrastructure built on Google Kubernetes Engine.",
+        "Build CI/CD pipelines using Github Actions, Skaffold, Kustomize.",
+        "Build observability platform using OpenTelemetry, Datadog.",
+        "Build Infrastructure as Code with Terraform, Terragrunt, Atlantis."
+      ]
+    },
+    {
       "company": "Employment Hero",
       "position": "Senior Platform Engineer",
       "website": "https://employmenthero.com",
       "startDate": "Oct 2018",
+      "endDate": "Feb 2022",
       "summary": "Employment Hero is a software that helps small and medium Australian businesses manage HR, payroll, employee engagement and benefits.",
       "highlights": [
         "Build Kubernetes based infrastructure on AWS for microservices.",
@@ -55,11 +69,8 @@
         "Plan and build AWS based infrastructure for backend team.",
         "Kubernetes the hard way on AWS using kops.",
         "Plan and migrate systems running on AWS ECS to Kubernetes without downtime.",
-        "Deploy, manage and stablize many services on Kubernetes: Graylog2, Elasticsearch, Kafka, Prometheus, Sentry.",
-        "Monitor Kubernetes and services using Prometheus and Grafana, get notified via Telegram or Slack.",
-        "Manage centralized logging system built upon Filebeat and ELK.",
-        "Build in-house tools to manage, automate and optimize infrastructure using shell script, Python.",
-        "Plan, design and create CI/CD process for development team using Jenkins, Bitbucket pipelines."
+        "Build in-house tools to govern, automate and optimize infrastructure using shell script, Python.",
+        "Plan, design and create CI/CD process for development teams using Jenkins, Bitbucket pipelines."
       ]
     },
     {
@@ -71,7 +82,7 @@
       "summary": "Posiba is an information service for the social sector dedicated to helping those working for public good make greater positive impact.",
       "highlights": [
         "Manage linux instances on AWS using Puppet.",
-        "Monitor infrastructure components using Zabbix, get notified via Telegram.",
+        "Monitor infrastructure components using Zabbix.",
         "Collect system and application logs using Fluentd, Elasticsearch and Kibana.",
         "Build in-house devops tools using shell script and Python.",
         "Help developers to roll out projects using devops tools: Puppet, Jenkins, Docker."
