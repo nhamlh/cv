@@ -1,6 +1,6 @@
 # cv
 
-[![Travis branch](https://img.shields.io/travis/nhamlh/cv.svg)](https://travis-ci.org/nhamlh/cv)
+[![Publish](https://github.com/nhamlh/cv/actions/workflows/publish.yaml/badge.svg)](https://github.com/nhamlh/cv/actions/workflows/publish.yaml)
 
 My personal curriculum vitae
 
