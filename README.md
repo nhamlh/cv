@@ -4,4 +4,4 @@
 
 My personal curriculum vitae
 
-See it [here](https://nhamlh.github.io/cv)
+See it [here](https://github.com/nhamlh/cv/releases/download/master/resume.pdf)
