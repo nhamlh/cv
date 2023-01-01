@@ -1,2 +1,8 @@
 memos.json
 extensions/
+*.xmpi
+*.aux
+*.bcf
+*.log
+*.out
+*.run.xml

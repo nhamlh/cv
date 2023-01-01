@@ -1,254 +1,264 @@
-%-----------------------------------------------------------------------------------------------------------------------------------------------%
-%	The MIT License (MIT)
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.6.5, 3 Nov 2022) written by LianTze Lim (liantze@gmail.com). Compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
 %
-%	Copyright (c) 2021 Jitin Nair
-%
-%	Permission is hereby granted, free of charge, to any person obtaining a copy
-%	of this software and associated documentation files (the "Software"), to deal
-%	in the Software without restriction, including without limitation the rights
-%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-%	copies of the Software, and to permit persons to whom the Software is
-%	furnished to do so, subject to the following conditions:
-%
-%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-%	THE SOFTWARE.
-%
-%
-%-----------------------------------------------------------------------------------------------------------------------------------------------%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
 
-%----------------------------------------------------------------------------------------
-%	DOCUMENT DEFINITION
-%----------------------------------------------------------------------------------------
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
 
-% article class because we want to fully customize the page and not use a cv template
-\documentclass[a4paper,12pt]{article}
+%\documentclass[9pt,a4paper,ragged2e,withhyper]{altacv}
+\documentclass[8pt,a4paper, withhyper]{altacv}
+%% AltaCV uses the fontawesome5 and packages.
+%% See http://texdoc.net/pkg/fontawesome5 for full list of symbols.
 
-%----------------------------------------------------------------------------------------
-%	FONT
-%----------------------------------------------------------------------------------------
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.25cm,bottom=1.25cm,columnsep=1cm}
 
-% % fontspec allows you to use TTF/OTF fonts directly
-% \usepackage{fontspec}
-% \defaultfontfeatures{Ligatures=TeX}
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
 
-% % modified for ShareLaTeX use
-% \setmainfont[
-% SmallCapsFont = Fontin-SmallCaps.otf,
-% BoldFont = Fontin-Bold.otf,
-% ItalicFont = Fontin-Italic.otf
-% ]
-% {Fontin.otf}
+% Allow lualatex to load font files directly
+% Ref: https://www.overleaf.com/learn/latex/Questions/I_have_a_custom_font_I%27d_like_to_load_to_my_document._How_can_I_do_this%3F
+\usepackage{fontspec}
 
-%----------------------------------------------------------------------------------------
-%	PACKAGES
-%----------------------------------------------------------------------------------------
-\usepackage{url}
-\usepackage{parskip}
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{[RobotoSlab-Regular.ttf]}
+  \setsansfont{[Lato-Regular.ttf]}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  % If using pdflatex:
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  % \usepackage{sourcesanspro}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
 
-%other packages for formatting
-\RequirePackage{color}
-\RequirePackage{graphicx}
-\usepackage[usenames,dvipsnames]{xcolor}
-\usepackage[scale=0.9]{geometry}
+% Change the colours if you want to
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
 
-%tabularx environment
-\usepackage{tabularx}
+% Change some fonts, if necessary
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
 
-%for lists within experience section
-\usepackage{enumitem}
 
-% centered version of 'X' col. type
-\newcolumntype{C}{>{\centering\arraybackslash}X}
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
 
-%to prevent spillover of tabular into next pages
-\usepackage{supertabular}
-\usepackage{tabularx}
-\newlength{\fullcollw}
-\setlength{\fullcollw}{0.47\textwidth}
+%% Use (and optionally edit if necessary) this .tex if you
+%% want to use an author-year reference style like APA(6)
+%% for your publication list
+% \input{pubs-authoryear.cfg}
 
-%custom \section
-\usepackage{titlesec}
-\usepackage{multicol}
-\usepackage{multirow}
+%% Use (and optionally edit if necessary) this .tex if you
+%% want an originally numerical reference style like IEEE
+%% for your publication list
+\input{pubs-num.cfg}
 
-%CV Sections inspired by:
-%http://stefano.italians.nl/archives/26
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{10pt}{10pt}
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
 
-%for publications
-\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
-
-%Setup hyperref package, and colours for links
-\usepackage[unicode, draft=false]{hyperref}
-\definecolor{linkcolour}{rgb}{0,0.2,0.6}
-\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
-\addbibresource{citations.bib}
-\setlength\bibitemsep{1em}
-
-%for social icons
-\usepackage{fontawesome5}
-
-%debug page outer frames
-%\usepackage{showframe}
-
-%----------------------------------------------------------------------------------------
-%	BEGIN DOCUMENT
-%----------------------------------------------------------------------------------------
 \begin{document}
+\name{Nham Hoai Le}
+\tagline{Senior Platform Engineer}
+%% You can add multiple photos on the left or right
+%\photoR{2.8cm}{Globe_High}
+% \photoL{2.5cm}{Yacht_High,Suitcase_High}
 
-% non-numbered pages
-\pagestyle{empty}
-
-%----------------------------------------------------------------------------------------
-%	TITLE
-%----------------------------------------------------------------------------------------
-
-\begin{tabularx}{\linewidth}{@{} C @{}}
-\Huge{Nham Le-Hoai} \\[7.5pt]
-\href{https://nhamlh.space}{\raisebox{-0.05\height}\faGlobe } \ $|$ \
-\href{mailto:lehoainham@gmail.com}{\raisebox{-0.05\height}\faEnvelope } \ $|$ \
-% I dont publish my phone number, however I still put it commented here. If you can find it, then you deserve it ;)
-%\href{tel:+84909404290}{\raisebox{-0.05\height}\faPhone } \ $|$ \
-\href{https://github.com/nhamlh}{\raisebox{-0.05\height}\faGithub } \ $|$ \
-\href{https://linkedin.com/in/nhamlh}{\raisebox{-0.05\height}\faLinkedin } \ $|$ \
-\href{https://twitter.com/nhamlh}{\raisebox{-0.05\height}\faTwitter } \\
-\end{tabularx}
-
-%----------------------------------------------------------------------------------------
-% EXPERIENCE SECTIONS
-%----------------------------------------------------------------------------------------
-
-%Interests/ Keywords/ Summary
-\section{Summary}
-Site Reliability Engineer with more than 8+ years of experience building and delivering internal service platform for organizations.
-
-%Experience
-\section{Work Experience}
-
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Senior Infrastructure Engineer @ Y42} & \hfill Mar 2022 - present \\[3.75pt]
-%\multicolumn{2}{@{}X@{}}{Y42 is the full-stack data platform that anyone can run. Remove the complexity of managing multiple tools and start using a scalable data platform.}  \\
-\multicolumn{2}{@{}X@{}}{
-\begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[--] Manage infrastructure built on Google Kubernetes Engine.
-        \item[--] Build CI/CD pipelines using Github Actions, Skaffold, Kustomize.
-        \item[--] Build observability platform using OpenTelemetry, Datadog.
-        \item[--] Build Infrastructure as Code with Terraform, Terragrunt, Atlantis.
-    \end{itemize}
-    \end{minipage}
+\personalinfo{%
+  % Not all of these are required!
+  \email{lehoainham@email.com}
+  %\phone{000-00-0000}
+  %\mailaddress{Åddrésş, Street, 00000 Cóuntry}
+  \location{Ho Chi Minh, Vietnam}
+  \homepage{www.nhamlh.space}
+  \twitter{@nhamlh}
+  \linkedin{nhamlh}
+  \github{nhamlh}
+  %\orcid{0000-0000-0000-0000}
+  %% You can add your own arbitrary detail with
+  %% \printinfo{symbol}{detail}[optional hyperlink prefix]
+  % \printinfo{\faPaw}{Hey ho!}[https://example.com/]
+  %% Or you can declare your own field with
+  %% \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix] and use it:
+  % \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
+  % \gitlab{your_id}
+  %%
+  %% For services and platforms like Mastodon where there isn't a
+  %% straightforward relation between the user ID/nickname and the hyperlink,
+  %% you can use \printinfo directly e.g.
+  % \printinfo{\faMastodon}{@username@instace}[https://instance.url/@username]
+  %% But if you absolutely want to create new dedicated info fields for
+  %% such platforms, then use \NewInfoField* with a star:
+  % \NewInfoField*{mastodon}{\faMastodon}
+  %% then you can use \mastodon, with TWO arguments where the 2nd argument is
+  %% the full hyperlink.
+  % \mastodon{@username@instance}{https://instance.url/@username}
 }
-\end{tabularx}
 
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Senior Platform Engineer @ Employment Hero} & \hfill Oct 2018 - Feb 2022 \\[3.75pt]
-%\multicolumn{2}{@{}X@{}}{Employment Hero is a software that helps small and medium Australian businesses manage HR, payroll, employee engagement and benefits.}  \\
-\multicolumn{2}{@{}X@{}}{
-\begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[--] Build Kubernetes based infrastructure on AWS for microservices.
-        \item[--] Build CI/CD pipelines using CircleCI, Flux, Helm.
-        \item[--] Build observability platform using Prometheus, Opsgenie, LogDNA, and Jaeger tracing.
-        \item[--] Build in-house tools to manage, automate and optimize infrastructure using shell script, Ruby and Golang.
-        \item[--] Platform governance: API gateway, service mesh, Postgresql, Redis, Kafka, etc.
-    \end{itemize}
-    \end{minipage}
-}
-\end{tabularx}
+\makecvheader
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
 
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{DevOps Engineer @ Misfit (Fossil VN)} & \hfill Aug 2016 - Sep 2018 \\[3.75pt]
-%\multicolumn{2}{@{}X@{}}{Misfit is an American consumer electronics company specializing in wearable technology that utilizes sensors and home automation products. Misfit then was acquired by Fossil Group in late 2015.}  \\
-\multicolumn{2}{@{}X@{}}{
-\begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[--] Kubernetes the hard way on AWS using kops.
-        \item[--] Plan and build AWS based infrastructure for backend team.
-        \item[--] Plan and migrate systems running on AWS ECS to Kubernetes without downtime.
-        \item[--] Build in-house tools to govern, automate and optimize infrastructure using shell script, Python.
-        \item[--] Plan, design and create CI/CD process for development teams using Jenkins, Bitbucket pipelines.
-    \end{itemize}
-    \end{minipage}
-}
-\end{tabularx}
 
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Cloud Operation Engineer @ Posiba} & \hfill Jan 2016 - Jul 2016 \\[3.75pt]
-%\multicolumn{2}{@{}X@{}}{Posiba is an information service for the social sector dedicated to helping those working for public good make greater positive impact.}  \\
-\multicolumn{2}{@{}X@{}}{
-\begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[--] Manage linux instances on AWS using Puppet.
-        \item[--] Monitor infrastructure components using Zabbix.
-        \item[--] Collect system and application logs using Fluentd, Elasticsearch and Kibana.
-        \item[--] Build in-house devops tools using shell script and Python.
-        \item[--] Help developers to roll out projects using devops tools: Puppet, Jenkins, Docker.
-    \end{itemize}
-    \end{minipage}
-}
-\end{tabularx}
+\begin{quote}
+``Site Reliability Engineer with more than 8+ years of experience building and delivering internal service platform for organizations.''
+\end{quote}
 
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Linux system administrator @ FPT Telecom} & \hfill Jul 2014 - Jan 2016 \\[3.75pt]
-%\multicolumn{2}{@{}X@{}}{FPT Telecom is one of biggest ISPs in Vietnam.}  \\
-\multicolumn{2}{@{}X@{}}{
-\begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[--] Build and monitor Linux systems and network devices using Icinga2 and Cacti.
-        \item[--] Manage Linux servers with many roles: DNS clusters, email gateway, monitoring servers, etc.
-        \item[--] Develop Ansible playbooks to manage multiple linux servers.
-        \item[--] Manage internal users connectivity via Squid proxy
-        \item[--] Build, manage and backup VMware ESXi.
-    \end{itemize}
-    \end{minipage}
-}
-\end{tabularx}
+%% Set the left/right column width ratio to 7:3.
+\columnratio{0.7}
 
-%----------------------------------------------------------------------------------------
-%	EDUCATION
-%----------------------------------------------------------------------------------------
-\section{Education}
-\begin{tabularx}{\linewidth}{@{}l X@{}}
-    2010 - 2014 & Bachelor's Degree at \textbf{Ho Chi Minh University of Sciences} \hfill \normalsize (GPA 7.75/10) \\
-\end{tabularx}
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+\cvsection{Experience}
 
-%----------------------------------------------------------------------------------------
-%	PUBLICATIONS
-%----------------------------------------------------------------------------------------
-%\section{Publications}
-%\begin{refsection}[citations.bib]
-%\nocite{*}
-%\printbibliography[heading=none]
-%\end{refsection}
+\cvevent{Senior Infrastructure Engineer}{Y42}{Mar 2022 -- Ongoing}{Remote}
+Build change management system to govern all infra components
+Build observability platform to help quickly find and fix production issues using OpenTelemetry and Datadog.
+Help service owners to ship their code confidently using Github Actions, Skaffold and Kustomize. Service owner can ship to production anytime they want.
 
-%----------------------------------------------------------------------------------------
-%	SKILLS
-%----------------------------------------------------------------------------------------
-\section{Skills}
-\begin{tabularx}{\linewidth}{@{}l X@{}}
-Programming &  \normalsize{Ruby, Python, Golang, Shell script}\\
-Cloud  &  \normalsize{AWS, GCP}\\
-Linux  &  \normalsize{Solid understanding, Troubleshooting}\\
-Network  &  \normalsize{TCP/IP network stack, Distributed system principles}\\
-Automation  &  \normalsize{Terraform, Ansible, Puppet}\\
-DevOps  &  \normalsize{Kubernetes, Docker, Git, Jenkins, CircleCI, Github Actions}\\
-\end{tabularx}
+\begin{itemize}
+\item[--] Manage infrastructure built on Google Kubernetes Engine.
+\item[--] Build CI/CD pipelines using Github Actions, Skaffold, Kustomize.
+\item[--] Build observability platform using OpenTelemetry, Datadog.
+\item[--] Build Infrastructure as Code with Terraform, Terragrunt, Atlantis.
+\end{itemize}
 
-%----------------------------------------------------------------------------------------
-%	References
-%----------------------------------------------------------------------------------------
-\section{References}
-\begin{tabularx}{\linewidth}{@{}l X@{}}
-\href{https://www.linkedin.com/in/kyanh}{\raisebox{-0.05\height}\faLinkedin \ Ky-Anh Huynh} \\
-\end{tabularx}
+\divider
 
-\vfill
-\center{\footnotesize Last updated: \today}
+\cvevent{Senior Platform Engineer}{Employment Hero}{Oct 2018 -- Feb 2022}{Remote}
+Build unified compute platform to support all microservices.
+\begin{itemize}
+\item[--] Build Kubernetes based infrastructure on AWS for microservices.
+\item[--] Build CI/CD pipelines using CircleCI, Flux, Helm.
+\item[--] Build observability platform using Prometheus, Opsgenie, LogDNA, and Jaeger tracing.
+\item[--] Build in-house tools to manage, automate and optimize infrastructure using shell script, Ruby and Golang.
+\item[--] Platform governance: API gateway, service mesh, Postgresql, Redis, Kafka, etc.
+\end{itemize}
+
+\divider
+
+\cvevent{DevOps Engineer}{Fossil Group}{Aug 2016 -- Sep 2018}{Vietnam}
+\begin{itemize}
+\item[--] Kubernetes the hard way on AWS using kops.
+\item[--] Plan and build AWS based infrastructure for backend team.
+\item[--] Plan and migrate systems running on AWS ECS to Kubernetes without downtime.
+\item[--] Build in-house tools to govern, automate and optimize infrastructure using shell script, Python.
+\item[--] Plan, design and create CI/CD process for development teams using Jenkins, Bitbucket pipelines.
+\end{itemize}
+
+\divider
+
+\cvevent{Cloud Operation Engineer}{Posiba}{Jan 2016 - Jul 2016}{Vietnam}
+\begin{itemize}
+\item[--] Manage linux instances on AWS using Puppet.
+\item[--] Monitor infrastructure components using Zabbix.
+\item[--] Collect system and application logs using Fluentd, Elasticsearch and Kibana.
+\item[--] Build in-house devops tools using shell script and Python.
+\item[--] Help developers to roll out projects using devops tools: Puppet, Jenkins, Docker.
+\end{itemize}
+
+\divider
+
+\cvevent{Linux System Administrator}{FPT Telecom}{Jul 2014 -- Jan 2016}{Vietnam}
+\begin{itemize}
+\item[--] Build and monitor Linux systems and network devices using Icinga2 and Cacti.
+\item[--] Manage Linux servers with many roles: DNS clusters, email gateway, monitoring servers, etc.
+\item[--] Develop Ansible playbooks to manage multiple linux servers.
+\item[--] Manage internal users connectivity via Squid proxy
+\item[--] Build, manage and backup VMware ESXi.
+\end{itemize}
+
+% use ONLY \newpage if you want to force a page break for
+% ONLY the current column
+%\newpage
+
+%% Switch to the right column. This will now automatically move to the second
+%% page if the content is too long.
+\switchcolumn
+
+\cvsection{Technologies used}
+
+\cvtag{Golang}
+\cvtag{Ruby}
+\cvtag{Python}
+\cvtag{Shell script}
+
+\divider\smallskip
+
+\cvtag{AWS}
+\cvtag{GCP}
+
+\divider\smallskip
+
+\cvtag{Kubernetes}
+\cvtag{Docker}
+\cvtag{Helm}
+\cvtag{Kustomize}
+\cvtag{Flux}
+\cvtag{Prometheus}
+
+\divider\smallskip
+
+\cvtag{gRPC}
+\cvtag{Postgres}
+\cvtag{Kafka}
+\cvtag{Hydra}
+\cvtag{Envoy}
+\cvtag{OpenTelemetry}
+\cvtag{Datadog}
+
+\cvsection{Languages}
+
+\cvskill{Vietnamese}{5}
+\divider
+
+\cvskill{English}{3}
+
+%% Yeah I didn't spend too much time making all the
+%% spacing consistent... sorry. Use \smallskip, \medskip,
+%% \bigskip, \vspace etc to make adjustments.
+\medskip
+
+\cvsection{Education}
+
+\cvevent{B.Sc.\ in Computer Network}{Ho Chi Minh University of Sciences}{2010 -- 2014}{}
+
+% \divider
+
+%\cvsection{Referees}
+
+% \cvref{name}{email}{mailing address}
+%\cvref{Name}{Institute}{a.beta@university.edu}
+
+\end{paracol}
+
 
 \end{document}
