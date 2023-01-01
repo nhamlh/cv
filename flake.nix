@@ -1,5 +1,5 @@
 {
-  description = "My resume";
+  description = "My personal curriculum vitae";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -7,12 +7,14 @@
 
   outputs = { self, nixpkgs }: 
   let
+    system = "x86_64-linux";
+    pkgs = nixpkgs.legacyPackages.${system};
     resumeFile = "resume";
   in
   {
-    packages.x86_64-linux.default = with import nixpkgs { system = "x86_64-linux"; };
+    packages.${system}.default = with import nixpkgs { inherit system; };
     stdenv.mkDerivation {
-      name = "My resume";
+      name = resumeFile;
 
       src = ./.;
 
@@ -28,5 +30,7 @@
         cp ${resumeFile}.pdf $out/${resumeFile}.pdf
       '';
     };
+
+    devShells.default = import ./shell.nix { inherit pkgs; };
   };
 }
