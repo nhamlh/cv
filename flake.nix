@@ -24,6 +24,7 @@
 
           src = ./.;
 
+          #NOTE: Should use pandoc so that we can also convert to html version?
           nativeBuildInputs = [
             (pkgs.texlive.combine {
               inherit (texlive)
