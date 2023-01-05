@@ -3,34 +3,51 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-  };
 
-  outputs = { self, nixpkgs }: 
-  let
-    system = "x86_64-linux";
-    pkgs = nixpkgs.legacyPackages.${system};
-    resumeFile = "resume";
-  in
-  {
-    packages.${system}.default = with import nixpkgs { inherit system; };
-    stdenv.mkDerivation {
-      name = resumeFile;
-
-      src = ./.;
-
-      nativeBuildInputs = [ texlive.combined.scheme-full ];
-
-      buildPhase = ''
-        export HOME=$(mktemp -d)
-        lualatex ${resumeFile}.tex
-      '';
-
-      installPhase = ''
-        mkdir $out
-        cp ${resumeFile}.pdf $out/${resumeFile}.pdf
-      '';
+    altacv = {
+      type = "github";
+      owner = "liantze";
+      repo = "AltaCV";
+      flake = false;
     };
-
-    devShells.default = import ./shell.nix { inherit pkgs; };
   };
+
+  outputs = inputs@{ self, nixpkgs, altacv, ... }:
+    let
+      system = "x86_64-linux";
+      pkgs = nixpkgs.legacyPackages.${system};
+      resumeFile = "resume";
+    in {
+      packages.${system}.default = with import nixpkgs { inherit system; };
+        stdenv.mkDerivation {
+          name = resumeFile;
+
+          src = ./.;
+
+          nativeBuildInputs = [
+            (pkgs.texlive.combine {
+              inherit (texlive)
+                scheme-basic extsizes etoolbox pdfx luatex85 xcolor xmpincl
+                accsupp fontawesome5 luatexbase koma-script fontspec pgf
+                tcolorbox environ enumitem adjustbox collectbox xkeyval dashrule
+                ifmtarg multirow changepage paracol biblatex biblatex-ieee;
+            })
+          ];
+
+          buildPhase = ''
+            cp  ${altacv}/*.cls ${altacv}/*.cfg .
+
+            # lualatex needs writable HOME to store tmp files
+            export HOME=$(mktemp -d)
+            lualatex ${resumeFile}.tex
+          '';
+
+          installPhase = ''
+            mkdir $out
+            cp ${resumeFile}.pdf $out/${resumeFile}.pdf
+          '';
+        };
+
+      devShells.default = import ./shell.nix { inherit pkgs; };
+    };
 }

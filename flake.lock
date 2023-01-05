@@ -1,5 +1,21 @@
 {
   "nodes": {
+    "altacv": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1667466830,
+        "narHash": "sha256-jEPkvjcykUw4laNSW8vBIH4ZLU3vpMXjjV60zD4oAKs=",
+        "owner": "liantze",
+        "repo": "AltaCV",
+        "rev": "483e6a60e218589cef65cab5e760e69f2718eacd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "liantze",
+        "repo": "AltaCV",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1672350804,
@@ -18,6 +34,7 @@
     },
     "root": {
       "inputs": {
+        "altacv": "altacv",
         "nixpkgs": "nixpkgs"
       }
     }
