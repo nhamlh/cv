@@ -40,6 +40,7 @@
 
             # lualatex needs writable HOME to store tmp files
             export HOME=$(mktemp -d)
+            echo $HOME
             lualatex ${resumeFile}.tex
           '';
 
@@ -49,6 +50,6 @@
           '';
         };
 
-      devShells.default = import ./shell.nix { inherit pkgs; };
+      devShells.x86_64-linux.default = import ./shell.nix { inherit pkgs; };
     };
 }

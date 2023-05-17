@@ -97,7 +97,7 @@
   %\phone{000-00-0000}
   %\mailaddress{Åddrésş, Street, 00000 Cóuntry}
   \location{Ho Chi Minh, Vietnam}
-  \homepage{www.nhamlh.space}
+%%   \homepage{www.nhamlh.space}
   \twitter{@nhamlh}
   \linkedin{nhamlh}
   \github{nhamlh}
@@ -127,9 +127,9 @@
 % \AtBeginEnvironment{itemize}{\small}
 
 
-\begin{quote}
-``Site Reliability Engineer with more than 8+ years of experience building and delivering internal service platform for organizations.''
-\end{quote}
+%% \begin{quote}
+%% ``Site Reliability Engineer with more than 8+ years of experience building and delivering internal service platform for organizations.''
+%% \end{quote}
 
 %% Set the left/right column width ratio to 7:3.
 \columnratio{0.7}
@@ -139,62 +139,29 @@
 \begin{paracol}{2}
 \cvsection{Experience}
 
+\cvevent{Senior DevOps Engineer}{NAB}{Dec 2022 -- now}{Vietnam}
+Designed and implemented a secure and efficient Kubernetes-as-a-Service platform for NAB's internal operations on AWS EKS. Deployed to hundreds of service teams, resulting in increased productivity and streamlined processes across the organization.
+
+\divider
+
 \cvevent{Senior Infrastructure Engineer}{Y42}{Mar 2022 -- Ongoing}{Remote}
-Build change management system to govern all infra components
-Build observability platform to help quickly find and fix production issues using OpenTelemetry and Datadog.
-Help service owners to ship their code confidently using Github Actions, Skaffold and Kustomize. Service owner can ship to production anytime they want.
-
-\begin{itemize}
-\item[--] Manage infrastructure built on Google Kubernetes Engine.
-\item[--] Build CI/CD pipelines using Github Actions, Skaffold, Kustomize.
-\item[--] Build observability platform using OpenTelemetry, Datadog.
-\item[--] Build Infrastructure as Code with Terraform, Terragrunt, Atlantis.
-\end{itemize}
-
+As a Senior Infrastructure Engineer, I successfully managed infrastructure on Google Kubernetes Engine using Terraform. I also built an observability platform using OpenTelemetry and Datadog to quickly resolve production issues. By implementing workflows using Github Actions, Skaffold, and Kustomize, I enabled service owners to confidently deploy code to production at any time, resulting in increased productivity and agility. Additionally, I developed processes to ensure compliance with SOC2 standards.
 \divider
 
 \cvevent{Senior Platform Engineer}{Employment Hero}{Oct 2018 -- Feb 2022}{Remote}
-Build unified compute platform to support all microservices.
-\begin{itemize}
-\item[--] Build Kubernetes based infrastructure on AWS for microservices.
-\item[--] Build CI/CD pipelines using CircleCI, Flux, Helm.
-\item[--] Build observability platform using Prometheus, Opsgenie, LogDNA, and Jaeger tracing.
-\item[--] Build in-house tools to manage, automate and optimize infrastructure using shell script, Ruby and Golang.
-\item[--] Platform governance: API gateway, service mesh, Postgresql, Redis, Kafka, etc.
-\end{itemize}
-
+As a senior platform engineer, I designed and implemented a secure and efficient platform for Employment Hero. This included building a Kubernetes-based infrastructure on AWS for microservices, creating CI/CD pipelines using CircleCI, Flux, and Helm, and developing an observability platform with Prometheus, Opsgenie, LogDNA, and Jaeger tracing. Additionally, I built in-house tools to manage, automate, and optimize infrastructure using shell script, Ruby, and Golang. I also oversaw platform governance, including API gateway, service mesh, Postgresql, Redis, Kafka, and more.
 \divider
 
 \cvevent{DevOps Engineer}{Fossil Group}{Aug 2016 -- Sep 2018}{Vietnam}
-\begin{itemize}
-\item[--] Kubernetes the hard way on AWS using kops.
-\item[--] Plan and build AWS based infrastructure for backend team.
-\item[--] Plan and migrate systems running on AWS ECS to Kubernetes without downtime.
-\item[--] Build in-house tools to govern, automate and optimize infrastructure using shell script, Python.
-\item[--] Plan, design and create CI/CD process for development teams using Jenkins, Bitbucket pipelines.
-\end{itemize}
-
+I have successfully implemented Kubernetes on AWS using Kops and built AWS-based infrastructure for backend teams. I also migrated systems from AWS ECS to Kubernetes without downtime, resulting in increased efficiency and productivity. Through the development of in-house tools using shell script and Python, I have automated and optimized infrastructure, improving stability and efficiency. Additionally, I planned and created CI/CD processes for development teams using Jenkins and Bitbucket pipelines, further streamlining operations and increasing productivity.
 \divider
 
 \cvevent{Cloud Operation Engineer}{Posiba}{Jan 2016 - Jul 2016}{Vietnam}
-\begin{itemize}
-\item[--] Manage linux instances on AWS using Puppet.
-\item[--] Monitor infrastructure components using Zabbix.
-\item[--] Collect system and application logs using Fluentd, Elasticsearch and Kibana.
-\item[--] Build in-house devops tools using shell script and Python.
-\item[--] Help developers to roll out projects using devops tools: Puppet, Jenkins, Docker.
-\end{itemize}
-
+As a Cloud Operation Engineer, I am managing Linux instances on AWS using Puppet and monitoring infrastructure components with Zabbix. I am adept at collecting system and application logs through the use of Fluentd, Elasticsearch, and Kibana. Additionally, I have developed in-house devops tools utilizing shell script and Python, and have assisted developers in rolling out projects using Puppet, Jenkins, and Docker. My expertise in these areas has resulted in increased efficiency and productivity within organizations, ultimately driving business outcomes and success.
 \divider
 
 \cvevent{Linux System Administrator}{FPT Telecom}{Jul 2014 -- Jan 2016}{Vietnam}
-\begin{itemize}
-\item[--] Build and monitor Linux systems and network devices using Icinga2 and Cacti.
-\item[--] Manage Linux servers with many roles: DNS clusters, email gateway, monitoring servers, etc.
-\item[--] Develop Ansible playbooks to manage multiple linux servers.
-\item[--] Manage internal users connectivity via Squid proxy
-\item[--] Build, manage and backup VMware ESXi.
-\end{itemize}
+Linux administrator with expertise in network device management, DNS clusters, email gateways, and server monitoring on Linux servers. Developing Ansible playbooks for multi-server management and managing user connectivity via Squid proxy and building, managing, and backing up VMware ESXi. Utilizes Icinga2 and Cacti for network monitoring.
 
 % use ONLY \newpage if you want to force a page break for
 % ONLY the current column
@@ -223,17 +190,22 @@ Build unified compute platform to support all microservices.
 \cvtag{Helm}
 \cvtag{Kustomize}
 \cvtag{Flux}
+\cvtag{ArgoCD}
 \cvtag{Prometheus}
-
-\divider\smallskip
-
-\cvtag{gRPC}
-\cvtag{Postgres}
-\cvtag{Kafka}
-\cvtag{Hydra}
+\cvtag{OPA}
+\cvtag{Contour}
+\cvtag{Istio}
 \cvtag{Envoy}
 \cvtag{OpenTelemetry}
 \cvtag{Datadog}
+
+\divider\smallskip
+
+\cvtag{Microservices}
+\cvtag{RESTful}
+\cvtag{gRPC}
+\cvtag{Postgres}
+\cvtag{Kafka}
 
 \cvsection{Languages}
 
